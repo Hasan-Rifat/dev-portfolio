@@ -2,6 +2,7 @@
 import Curser from "@/components/shared/Curser";
 import "./globals.css";
 import { ThemeProvider, useTheme } from "next-themes";
+import Nav from "@/components/shared/Nav";
 
 export default function RootLayout({
   children,
@@ -13,6 +14,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider defaultTheme="dark" attribute="class">
           <Curser />
+          <Nav />
           {children}
         </ThemeProvider>
       </body>
