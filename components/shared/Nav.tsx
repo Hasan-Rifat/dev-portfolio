@@ -59,7 +59,7 @@ const Nav: React.FC<NavProps> = () => {
             </div>
             <nav
               className={`flex items-center gap-4 md:justify-center 
-            relative col-span-2 md:col-span-3
+            relative col-span-2 md:col-span-3 p-5 md:p-0
             `}
             >
               <button
@@ -69,7 +69,7 @@ const Nav: React.FC<NavProps> = () => {
                 <TfiMenu className="text-2xl" />
               </button>
               <ul
-                className={` w-full md:flex md:items-center light:text-[#000] dark:md:bg-[#12121200] p-5 rounded-xl sm:gap-4 lg:gap-10 dark:bg-[#fff] dark:md:text-[#fff] light:md:text-[#000] dark:text-[#000]  ${
+                className={` w-full md:flex md:items-center md:justify-end light:text-[#000] dark:md:bg-[#12121200] p-5 rounded-xl sm:gap-4 lg:gap-10 dark:bg-[#fff] dark:md:text-[#fff] light:md:text-[#000] dark:text-[#000]  ${
                   open
                     ? "block absolute left-0 top-[134%]  md:bg-black"
                     : "hidden"
