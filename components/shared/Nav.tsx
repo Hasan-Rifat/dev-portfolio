@@ -43,14 +43,12 @@ const Nav: React.FC<NavProps> = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
-  console.log(open);
-
   return (
     <>
       <header>
-        <div className="max-w-[1905px] mx-auto px-[5%] py-[2%]">
-          <div className="flex justify-between items-center">
-            <div className="w-full">
+        <div className="max-w-[1905px] mx-auto px-[5%] py-[1.5%]">
+          <div className="grid grid-cols-4 items-center">
+            <div className="col-span-2 md:col-span-1">
               <h2>
                 <Link className="2xl:text-3xl font-bold " href="/">
                   <span className="dark:text-primary">Hasan_Rifat</span>{" "}
@@ -61,7 +59,7 @@ const Nav: React.FC<NavProps> = () => {
             </div>
             <nav
               className={`flex items-center gap-4 md:justify-center 
-            relative w-full
+            relative col-span-2 md:col-span-3
             `}
             >
               <button
@@ -71,15 +69,17 @@ const Nav: React.FC<NavProps> = () => {
                 <TfiMenu className="text-2xl" />
               </button>
               <ul
-                className={` w-full md:flex md:items-center  sm:gap-4 lg:gap-10 ${
-                  open ? "block absolute left-0 top-[102%]" : "hidden"
+                className={` w-full md:flex md:items-center light:text-[#000] dark:md:bg-[#12121200] p-5 rounded-xl sm:gap-4 lg:gap-10 dark:bg-[#fff] dark:md:text-[#fff] light:md:text-[#000] dark:text-[#000]  ${
+                  open
+                    ? "block absolute left-0 top-[134%]  md:bg-black"
+                    : "hidden"
                 }`}
                 // flex-col justify-evenly sm:flex-row   items-center
                 // ${ open ? "block" : "hidden" }
               >
                 {menu.map((item) => (
                   <Link className="block" href={item.path} key={item.id}>
-                    <li className="font-bold text-sm 2xl:text-xl">
+                    <li className="font-bold text-sm 2xl:text-xl darK:text-[#fff] light:text-[#000] hover:text-primary">
                       <span className="mr-2"> {"//"}</span>
                       <span> {item.name}</span>
                     </li>
