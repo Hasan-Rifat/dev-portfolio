@@ -63,7 +63,7 @@ const Nav: React.FC<NavProps> = () => {
       <header
         className={` w-full  ${
           scroll
-            ? "sticky left-0 top-0 shadow-2xl bg-[#fff] transition  ease-out md:ease-in"
+            ? "sticky left-0 top-0 shadow-lg dark:text-[#333333] transition  ease-out md:ease-in"
             : "absolute left-0 top-0 bg-[#21242800]"
         }`}
       >
@@ -74,7 +74,11 @@ const Nav: React.FC<NavProps> = () => {
                 <Link className="2xl:text-3xl font-bold " href="/">
                   <span className="dark:text-primary">
                     Hasan_
-                    <span className="dark:text-[#fff] text-[#333333]">
+                    <span
+                      className={`dark:text-[#fff] text-[#333333] ${
+                        open && "darK:text-[#333333]"
+                      }`}
+                    >
                       Rifat
                     </span>
                   </span>{" "}
