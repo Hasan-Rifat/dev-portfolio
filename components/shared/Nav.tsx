@@ -92,9 +92,10 @@ const Nav: React.FC<NavProps> = () => {
                 <TfiMenu className="text-2xl" />
               </button>
               <ul
-                className={` w-full md:flex md:items-center md:justify-end  p-5 rounded-xl sm:gap-4 lg:gap-2 dark:md:bg-[#12121200] dark:md:text-[#fff]
+                className={` w-full md:flex md:items-center md:justify-end  p-5 rounded-xl sm:gap-4 lg:gap-2  dark:md:bg-[#12121200] dark:md:text-[#fff]
                dark:text-[#000]
                   bg-[#000] text-[#fff]
+                  md:bg-[#0000] md:text-[#000]
                 ${
                   open
                     ? "  dark:bg-[#fff]  block absolute left-0 top-[134%]  md:bg-black transition duration-150 ease-out md:ease-in"
