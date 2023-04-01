@@ -63,17 +63,20 @@ const Nav: React.FC<NavProps> = () => {
       <header
         className={` w-full  ${
           scroll
-            ? "sticky left-0 top-0 shadow-2xl bg-[#212428] transition  ease-out md:ease-in"
+            ? "sticky left-0 top-0 shadow-2xl bg-[#fff] transition  ease-out md:ease-in"
             : "absolute left-0 top-0 bg-[#21242800]"
         }`}
       >
-        <div className="xl:container mx-auto px-[5%] py-[1.5%]">
+        <div className="xl:container mx-auto px-[5%] py-[0.5%]">
           <div className="grid grid-cols-4 items-center">
             <div className="col-span-2 md:col-span-1">
               <h2>
                 <Link className="2xl:text-3xl font-bold " href="/">
                   <span className="dark:text-primary">
-                    Hasan_<span className="dark:text-[#fff]">Rifat</span>
+                    Hasan_
+                    <span className="dark:text-[#fff] text-[#333333]">
+                      Rifat
+                    </span>
                   </span>{" "}
                   <span className="text-white rounded-full">.</span>{" "}
                   <span className="dark:text-primary">_</span>
@@ -93,9 +96,9 @@ const Nav: React.FC<NavProps> = () => {
               </button>
               <ul
                 className={` w-full md:flex md:items-center md:justify-end  p-5 rounded-xl sm:gap-4 lg:gap-2  dark:md:bg-[#12121200] dark:md:text-[#fff]
-               dark:text-[#000]
-                  bg-[#000] text-[#fff]
-                  md:bg-[#0000] md:text-[#000]
+               dark:text-[#333333]
+                  bg-[#333333] text-[#fff]
+                  md:bg-[#0000] md:text-[#333333]
                 ${
                   open
                     ? "  dark:bg-[#fff]  block absolute left-0 top-[134%]  md:bg-black transition duration-150 ease-out md:ease-in"
