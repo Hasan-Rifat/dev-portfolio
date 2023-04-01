@@ -61,7 +61,7 @@ const Nav: React.FC<NavProps> = () => {
   return (
     <>
       <header
-        className={` w-full transition  ease-out md:ease-in ${
+        className={`z-50 dark:bg-secondary bg-[#dde3ef] w-full transition  ease-out md:ease-in ${
           scroll
             ? "sticky left-0 top-0 shadow-lg dark:text-[#333333] "
             : "absolute left-0 top-0 bg-[#21242800]"
