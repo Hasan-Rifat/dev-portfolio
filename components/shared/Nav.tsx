@@ -10,6 +10,7 @@ import dynamic from "next/dynamic";
 type NavProps = {};
 
 const Nav: React.FC<NavProps> = () => {
+  const [scroll, setScroll] = useState(false);
   const { theme, setTheme } = useTheme();
   const [open, setOpen] = useState(false);
   const menu = [
@@ -43,23 +44,45 @@ const Nav: React.FC<NavProps> = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
+  // header scroll effect
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 200) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <header>
-        <div className="max-w-[1905px] mx-auto px-[5%] py-[1.5%]">
+      <header
+        className={` w-full  ${
+          scroll
+            ? "sticky left-0 top-0 shadow-2xl bg-[#212428] transition  ease-out md:ease-in"
+            : "absolute left-0 top-0 bg-[#21242800]"
+        }`}
+      >
+        <div className="xl:container mx-auto px-[5%] py-[1.5%]">
           <div className="grid grid-cols-4 items-center">
             <div className="col-span-2 md:col-span-1">
               <h2>
                 <Link className="2xl:text-3xl font-bold " href="/">
-                  <span className="dark:text-primary">Hasan_Rifat</span>{" "}
+                  <span className="dark:text-primary">
+                    Hasan_<span className="dark:text-[#fff]">Rifat</span>
+                  </span>{" "}
                   <span className="text-white rounded-full">.</span>{" "}
-                  <span className="text-[#bb77ff]">_</span>
+                  <span className="dark:text-primary">_</span>
                 </Link>
               </h2>
             </div>
             <nav
               className={`flex items-center gap-4 md:justify-center 
-            relative col-span-2 md:col-span-3 p-5 md:p-0
+            relative col-span-2 md:col-span-3 md:p-0
             `}
             >
               <button
@@ -69,23 +92,32 @@ const Nav: React.FC<NavProps> = () => {
                 <TfiMenu className="text-2xl" />
               </button>
               <ul
-                className={` w-full md:flex md:items-center md:justify-end light:text-[#000] dark:md:bg-[#12121200] p-5 rounded-xl sm:gap-4 lg:gap-10 dark:bg-[#fff] dark:md:text-[#fff] light:md:text-[#000] dark:text-[#000]  ${
+                className={` w-full md:flex md:items-center md:justify-end  p-5 rounded-xl sm:gap-4 lg:gap-2 dark:md:bg-[#12121200] dark:md:text-[#fff]
+               dark:text-[#000]
+                  bg-[#000] text-[#fff]
+                ${
                   open
-                    ? "block absolute left-0 top-[134%]  md:bg-black"
+                    ? "  dark:bg-[#fff]  block absolute left-0 top-[134%]  md:bg-black transition duration-150 ease-out md:ease-in"
                     : "hidden"
                 }`}
-                // flex-col justify-evenly sm:flex-row   items-center
-                // ${ open ? "block" : "hidden" }
               >
                 {menu.map((item) => (
-                  <Link className="block" href={item.path} key={item.id}>
-                    <li className="font-bold text-sm 2xl:text-xl darK:text-[#fff] light:text-[#000] hover:text-primary">
+                  <Link className=" block mx-4" href={item.path} key={item.id}>
+                    <li
+                      className="group relative  dark:hover:text-primary light:hover:text-primary font-bold text-sm 2xl:text-xl 
+                    "
+                    >
                       <span className="mr-2"> {"//"}</span>
                       <span> {item.name}</span>
+
+                      <span
+                        className={` md:absolute md:inset-x-0 md:bottom-0 md:h-0.5 md:origin-left md:scale-x-0 md:transform md:bg-primary md:transition-transform md:duration-300 md:ease-in-out md:group-hover:scale-x-100`}
+                      ></span>
                     </li>
                   </Link>
                 ))}
               </ul>
+
               <button onClick={() => toggleTheme()}>
                 {theme === "dark" ? (
                   <HiOutlineSun className="text-2xl" />

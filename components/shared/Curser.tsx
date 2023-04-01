@@ -10,7 +10,7 @@ const Curser: React.FC<CurserProps> = () => {
     const follower = document.querySelector(".follower");
 
     const onMouseMove = (e: MouseEvent) => {
-      gsap.to(cursor, 0.8, {
+      gsap.to(cursor, 0.3, {
         x: e.clientX,
         y: e.clientY,
         opacity: 1,

@@ -1,8 +1,14 @@
 "use client";
+
+import Hero from "@/components/Home/Hero";
+
 export default function Home() {
   return (
     <main>
-      <section></section>
+      <Hero />
+      <Hero />
+      <Hero />
+      <Hero />
     </main>
   );
 }
