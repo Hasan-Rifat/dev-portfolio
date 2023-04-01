@@ -61,9 +61,9 @@ const Nav: React.FC<NavProps> = () => {
   return (
     <>
       <header
-        className={` w-full  ${
+        className={` w-full transition  ease-out md:ease-in ${
           scroll
-            ? "sticky left-0 top-0 shadow-lg dark:text-[#333333] transition  ease-out md:ease-in"
+            ? "sticky left-0 top-0 shadow-lg dark:text-[#333333] "
             : "absolute left-0 top-0 bg-[#21242800]"
         }`}
       >
@@ -82,7 +82,7 @@ const Nav: React.FC<NavProps> = () => {
                       Rifat
                     </span>
                   </span>{" "}
-                  <span className="text-white rounded-full">.</span>{" "}
+                  <span className="dark:text-[#fff] rounded-full">.</span>{" "}
                   <span className="dark:text-primary">_</span>
                 </Link>
               </h2>
@@ -128,9 +128,9 @@ const Nav: React.FC<NavProps> = () => {
 
               <button onClick={() => toggleTheme()}>
                 {theme === "dark" ? (
-                  <HiOutlineSun className="text-2xl" />
+                  <HiOutlineSun className="text-2xl dark:text-[#fff]" />
                 ) : (
-                  <BsMoonStars className="text-xl" />
+                  <BsMoonStars className="text-xl dark:text-[#fff]" />
                 )}
               </button>
             </nav>
