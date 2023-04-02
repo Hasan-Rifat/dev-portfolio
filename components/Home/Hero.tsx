@@ -10,7 +10,6 @@ type HeroProps = {};
 
 const Hero: React.FC<HeroProps> = () => {
   const { theme } = useTheme();
-  console.log(`${theme === "dark" ? darkBg.src : lightBg.src}`);
 
   return (
     <section className={`h-screen flex items-center relative`}>
@@ -20,32 +19,71 @@ const Hero: React.FC<HeroProps> = () => {
         fill
       />
       <div className="xl:container mx-auto px-[5%] py-[0.5%] z-50">
-        <div className="flex sm:flex-row items-center justify-between w-full gap-16">
-          <div className="dark:bg-[#212428] bg-[#fff] p-16 rounded-xl shadow-xl">
+        <div className="md:grid md:grid-cols-8 gap-5 xl:gap-10 2xl:gap-20 md:items-center">
+          <div className="md:col-span-4 lg:col-span-3 dark:bg-[#212428] bg-[#fff] p-16 rounded-xl shadow-xl">
             <Image src={heroLeftImg} alt="hero image" />
           </div>
-          <div className="">
+          <div
+            className="
+          md:col-span-4 lg:col-span-5 
+          md:mt-0 mt-10
+          "
+          >
             <h4 className="text-2xl leading-9 text-primary">HELLO I&apos;M</h4>
-            <h2 className="text-[60px] leading-[90px] dark:text-[#fff] text-[#212428] font-extrabold">
+            <h2
+              className="
+            2xl:text-[60px] 2xl:leading-[90px] 2xl:py-3
+            xl:text-[48px] xl:leading-[72px] 
+            md:text-[32px] md:leading-[44px]
+            sm:text-[30px] sm:leading-[40px]
+            text-[24px] leading-[36px] py-2
+            dark:text-[#fff] text-[#212428] font-extrabold"
+            >
               Hasan Rifat
             </h2>
-            <h5 className="text-[32px] leading-[48px] dark:text-[#fff] text-[#212428] font-semibold">
+            <h5
+              className="
+            xl:text-[32px] xl:leading-[48px]
+            md:text-[20px] md:leading-[32px]
+            sm:text-[18px] sm:leading-[28px]
+            text-[16px] leading-[22px]
+            dark:text-[#fff] text-[#212428] font-semibold"
+            >
               Full Stack web developer
             </h5>
-            <p className="dark:text-[#e2e8f0] text-[20px] leading-[30px] mb-[30px] mt-[18px]">
+            <p
+              className="dark:text-[#e2e8f0] 
+            lg:text-[20px] lg:leading-[30px] lg:mb-[30px] lg:mt-[18px]
+            md:text-[18px] md:leading-[28px] md:mb-[20px] md:mt-[10px]
+            sm:text-[16px] sm:leading-[24px] mb-[10px] mt-[5px]
+            text-[14px] leading-[20px] 
+            "
+            >
               I m a self-learner person. I am constantly gaining new skills in{" "}
-              <br />
               web development. By which I can give some good benefit to your
-              <br />
               Team. Besides, I am a hard-working and creative person
             </p>
             <div>
-              <button className="text-primary  text-2xl leading-[36px] px-[42px] py-[10px] rounded-[50px] hover:bg-primary hover:text-[#fff] font-bold border-[1px] border-primary">
+              <button
+                className="text-primary
+              lg:text-2xl lg:leading-[36px] lg:px-[42px] lg:py-[10px]
+              md:text-lg md:leading-[24px] md:px-[32px] md:py-[8px]
+              sm:text-base sm:leading-[20px] sm:px-[24px] sm:py-[6px]
+              text-sm leading-[16px] px-[16px] py-[4px]
+              rounded-[50px] hover:bg-primary hover:text-[#fff] font-bold border-[1px] border-primary"
+              >
                 About me
               </button>{" "}
-              <span className="text-[22px] leading-[24px] ml-[18px]">
+              <strong
+                className="
+              lg:text-[22px] lg:leading-[24px] lg:ml-[18px]
+              md:text-[18px] md:leading-[20px] md:ml-[10px]
+              sm:text-[16px] sm:leading-[18px] sm:ml-[8px]
+              text-[14px] leading-[16px] ml-[4px]
+              "
+              >
                 Follow me:
-              </span>
+              </strong>
             </div>
           </div>
         </div>

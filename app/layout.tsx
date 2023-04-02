@@ -3,12 +3,15 @@ import Curser from "@/components/shared/Curser";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Nav from "@/components/shared/Nav";
+import { useEffect } from "react";
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  localStorage.setItem("theme", "dark");
+
   return (
     <html lang="en">
       <body>
