@@ -63,11 +63,11 @@ const Nav: React.FC<NavProps> = () => {
       <header
         className={`z-[99999]   w-full transition  ease-out md:ease-in absolute left-0 top-0 bg-[#21242800] ${
           scroll
-            ? "sticky left-0 top-0 shadow-lg dark:text-[#333333] dark:bg-secondary bg-[#fff]"
+            ? "sticky left-0 top-0 shadow-lg dark:text-[#333333] dark:bg-[#181a1d] bg-[#fff]"
             : ""
         }`}
       >
-        <div className="xl:container mx-auto px-[5%] py-[0.5%]">
+        <div className="lg:container mx-auto px-[5%] py-[0.5%]">
           <div className="grid grid-cols-4 items-center">
             <div className="col-span-2 md:col-span-1">
               <h2>
@@ -112,7 +112,7 @@ const Nav: React.FC<NavProps> = () => {
                 {menu.map((item) => (
                   <Link className=" block mx-2" href={item.path} key={item.id}>
                     <li
-                      className="group relative  md:text-xs 2xl:text-xl  dark:hover:text-primary hover:text-primary font-bold  
+                      className="group relative text-xs 2xl:text-xl  dark:hover:text-primary hover:text-primary font-bold  
                     "
                     >
                       <span className="mr-1"> {"//"}</span>
