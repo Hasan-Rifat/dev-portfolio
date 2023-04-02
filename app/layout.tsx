@@ -10,8 +10,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  localStorage.setItem("theme", "dark");
-
+  if (typeof window !== "undefined") {
+    localStorage.setItem("theme", "dark");
+  }
   return (
     <html lang="en">
       <body>
