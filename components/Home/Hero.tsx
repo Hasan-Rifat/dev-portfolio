@@ -17,14 +17,9 @@ const Hero: React.FC<HeroProps> = () => {
 
   return (
     <section
-      className={`h-screen flex items-center relative border-b-[1px] dark:border-secondary border-[#0000] dark:bg-[#212428] bg-[#dde5ef]`}
+      className={`h-screen flex items-center  border-b-[1px] dark:border-accent border-[#0000] dark:bg-[#212428] bg-[#dde5ef] overflow-hidden`}
     >
-      {/*  <Image
-        src={`${theme === "dark" ? darkBg.src : lightBg.src}`}
-        alt={"background images"}
-        fill
-      /> */}
-      <div className="lg:container mx-auto px-[5%] py-[0.5%] z-50">
+      <div className="lg:container mx-auto px-[5%] py-[0.5%] ">
         <div className="md:grid md:grid-cols-8 gap-5 xl:gap-10 2xl:gap-20 md:items-center">
           <div className="md:col-span-4  dark:bg-[#181a1d] bg-[#fff] p-16 rounded-xl shadow-xl">
             <Image src={heroLeftImg} alt="hero image" />
@@ -43,7 +38,7 @@ const Hero: React.FC<HeroProps> = () => {
             md:text-[32px] md:leading-[44px]
             sm:text-[30px] sm:leading-[40px]
             text-[24px] leading-[36px] py-2
-            dark:text-[#fff] text-[#212428] font-extrabold"
+            dark:text-[#fff] text-secondary font-extrabold"
             >
               Hasan Rifat
             </h2>
@@ -69,28 +64,30 @@ const Hero: React.FC<HeroProps> = () => {
               web development. By which I can give some good benefit to your
               Team. Besides, I am a hard-working and creative person
             </p>
-            <div className="flex items-center gap-6">
-              <button
-                className="text-primary
-              lg:text-2xl lg:leading-[36px] lg:px-[42px] lg:py-[10px]
+            <div className="grid grid-cols-2 2xl:grid-cols-3 items-center gap-6">
+              <div className=" flex items-center gap-4 w-full col-span-2 2xl:col-span-2">
+                <button
+                  className="text-primary mr-3
+              lg:text-xl lg:leading-[36px] lg:px-[32px] lg:py-[8px]
               md:text-lg md:leading-[24px] md:px-[32px] md:py-[8px]
               sm:text-base sm:leading-[20px] sm:px-[24px] sm:py-[6px]
               text-sm leading-[16px] px-[16px] py-[4px]
               rounded-[50px] hover:bg-primary hover:text-[#fff] font-bold border-[1px] border-primary"
-              >
-                About me
-              </button>
-              <strong
-                className=" 
+                >
+                  About me
+                </button>
+                <strong
+                  className=" 
               lg:text-[22px] lg:leading-[24px] 
               md:text-[18px] md:leading-[20px] 
               sm:text-[16px] sm:leading-[18px] 
               text-[14px] leading-[16px] 
               "
-              >
-                Follow me:
-              </strong>
-              <div className="flex gap-2">
+                >
+                  Follow me:
+                </strong>
+              </div>
+              <div className="flex gap-2 w-full ml-3 col-span-2 2xl:col-span-1">
                 <Link
                   target="_blank"
                   href="https://www.linkedin.com/in/dev-hasan-rifat/"

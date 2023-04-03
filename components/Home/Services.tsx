@@ -52,7 +52,7 @@ const Services: React.FC<ServicesProps> = () => {
       <div className="lg:container mx-auto px-[5%] py-[0.5%]">
         <div className="lg:flex lg:items-center lg:gap-[118px]">
           <div className="">
-            <h5 className="text-center lg:text-left text-primary text-2xl leading-9">
+            <h5 className="text-center lg:text-left font-semibold text-primary text-2xl leading-9">
               CREATIVE SERVICE
             </h5>
             <h3
@@ -66,6 +66,7 @@ const Services: React.FC<ServicesProps> = () => {
             sm:text-xl sm:leading-[18px]
             text-lg leading-[18px]
             font-bold
+            text-secondary dark:text-[#fff]
             "
             >
               What can i do for service clients you
