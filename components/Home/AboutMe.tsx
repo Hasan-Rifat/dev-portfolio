@@ -66,8 +66,13 @@ const AboutMe: React.FC<AboutMeProps> = () => {
               ))}
             </ul>
           </div>
-          <div className="mt-5 lg:mt-0 p-20 relative">
-            <Image src={img} alt="about me image" className="rounded-xl" fill />
+          <div className="p-20 relative">
+            <Image
+              src={img}
+              alt="about me image"
+              className="rounded-xl "
+              fill
+            />
           </div>
         </div>
       </div>

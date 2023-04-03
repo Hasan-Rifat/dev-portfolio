@@ -20,19 +20,24 @@ const Nav: React.FC<NavProps> = () => {
       id: 1,
     },
     {
-      name: "expertise",
-      path: "/expertise",
+      name: "About",
+      path: "/about",
       id: 2,
     },
     {
-      name: "work",
-      path: "/work",
+      name: "Services",
+      path: "/services",
       id: 3,
+    },
+    {
+      name: "Work",
+      path: "/experience",
+      id: 4,
     },
     {
       name: "experience",
       path: "/experience",
-      id: 4,
+      id: 6,
     },
     {
       name: "contact",
@@ -94,15 +99,15 @@ const Nav: React.FC<NavProps> = () => {
             >
               <button
                 onClick={() => setOpen(!open)}
-                className="block md:hidden ml-auto"
+                className="block lg:hidden ml-auto"
               >
                 <TfiMenu className="text-2xl" />
               </button>
               <ul
-                className={` w-full md:flex md:items-center md:justify-end px-2 py-5 rounded-xl gap-2  dark:md:bg-[#12121200] dark:md:text-[#fff]
+                className={` w-full lg:flex lg:items-center lg:justify-end px-2 py-5 rounded-xl gap-2  dark:lg:bg-[#12121200] dark:lg:text-[#fff]
                dark:text-[#333333]
                   bg-[#333333] text-[#fff]
-                  md:bg-[#0000] md:text-[#333333]
+                  lg:bg-[#0000] lg:text-[#333333]
                 ${
                   open
                     ? "  dark:bg-[#fff]  block absolute left-0 top-[134%]  md:bg-black transition duration-150 ease-out md:ease-in"
@@ -112,14 +117,14 @@ const Nav: React.FC<NavProps> = () => {
                 {menu.map((item) => (
                   <Link className=" block mx-2" href={item.path} key={item.id}>
                     <li
-                      className="group relative text-xs 2xl:text-xl  dark:hover:text-primary hover:text-primary font-bold  
+                      className="group relative text-xs 2xl:text-xl  dark:hover:text-primary hover:text-primary font-bold  inline-block
                     "
                     >
                       <span className="mr-1"> {"//"}</span>
                       <span> {item.name}</span>
 
                       <span
-                        className={` md:absolute md:inset-x-0 md:bottom-0 md:h-0.5 md:origin-left md:scale-x-0 md:transform md:bg-primary md:transition-transform md:duration-300 md:ease-in-out md:group-hover:scale-x-100`}
+                        className={`md:absolute md:inset-x-0 md:bottom-0 md:h-0.5 md:origin-left md:scale-x-0 md:transform md:bg-primary md:transition-transform md:duration-300 md:ease-in-out md:group-hover:scale-x-100`}
                       ></span>
                     </li>
                   </Link>
