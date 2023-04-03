@@ -117,7 +117,7 @@ const Services: React.FC<ServicesProps> = () => {
                 <h4 className="text-[25px] leading-[37.5px] mt-[20px] mb-[15px] font-bold">
                   {title}
                 </h4>
-                <p className="text-xl leading-8 dark:text-[#adb5bd] text-[#666]">
+                <p className="text-lg leading-7 text-justify dark:text-[#adb5bd] text-[#666] ">
                   {text}
                 </p>
               </div>

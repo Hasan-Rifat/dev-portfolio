@@ -17,16 +17,16 @@ const Hero: React.FC<HeroProps> = () => {
 
   return (
     <section
-      className={`h-screen flex items-center relative border-b-[1px] dark:border-secondary border-[#0000]`}
+      className={`h-screen flex items-center relative border-b-[1px] dark:border-secondary border-[#0000] dark:bg-[#212428] bg-[#dde5ef]`}
     >
-      <Image
+      {/*  <Image
         src={`${theme === "dark" ? darkBg.src : lightBg.src}`}
         alt={"background images"}
         fill
-      />
+      /> */}
       <div className="lg:container mx-auto px-[5%] py-[0.5%] z-50">
         <div className="md:grid md:grid-cols-8 gap-5 xl:gap-10 2xl:gap-20 md:items-center">
-          <div className="md:col-span-4  dark:bg-[#212428] bg-[#fff] p-16 rounded-xl shadow-xl">
+          <div className="md:col-span-4  dark:bg-[#181a1d] bg-[#fff] p-16 rounded-xl shadow-xl">
             <Image src={heroLeftImg} alt="hero image" />
           </div>
           <div
@@ -58,7 +58,7 @@ const Hero: React.FC<HeroProps> = () => {
               Full Stack web developer
             </h5>
             <p
-              className="dark:text-[#e2e8f0] 
+              className="dark:text-[#e2e8f0] text-[#212428]
             lg:text-[20px] lg:leading-[30px] lg:mb-[30px] lg:mt-[18px]
             md:text-[18px] md:leading-[28px] md:mb-[20px] md:mt-[10px]
             sm:text-[16px] sm:leading-[24px] mb-[10px] mt-[5px]
