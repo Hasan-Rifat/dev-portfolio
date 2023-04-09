@@ -49,7 +49,7 @@ const Services: React.FC<ServicesProps> = () => {
   ];
   return (
     <section className="py-[100px] dark:bg-[#212428]">
-      <div className="lg:container mx-auto px-[5%] py-[0.5%]">
+      <div className="xl:container mx-auto px-[5%] py-[0.5%]">
         <div className="lg:flex lg:items-center lg:gap-[118px]">
           <div className="">
             <h5 className="text-center lg:text-left font-semibold text-primary text-2xl leading-9">

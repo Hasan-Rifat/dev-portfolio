@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = () => {
     <section
       className={`h-screen flex items-center  border-b-[1px] dark:border-accent border-[#0000] dark:bg-[#212428] bg-[#dde5ef] overflow-hidden`}
     >
-      <div className="lg:container mx-auto px-[5%] py-[0.5%] ">
+      <div className="xl:container mx-auto px-[5%] py-[0.5%] ">
         <div className="md:grid md:grid-cols-8 gap-5 xl:gap-10 2xl:gap-20 md:items-center">
           <div className="md:col-span-4  dark:bg-[#181a1d] bg-[#fff] p-16 rounded-xl shadow-xl">
             <Image src={heroLeftImg} alt="hero image" />

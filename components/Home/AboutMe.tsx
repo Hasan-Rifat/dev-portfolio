@@ -19,7 +19,7 @@ const AboutMe: React.FC<AboutMeProps> = () => {
   ];
   return (
     <section className="py-[400px] h-screen flex items-center  border-b-[1px] dark:border-accent border-[#0000] dark:bg-success bg-[#ebf1f6] ">
-      <div className="lg:container mx-auto px-[5%] py-[0.5%]">
+      <div className="xl:container mx-auto px-[5%] py-[0.5%]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 ">
           <div>
             <div>

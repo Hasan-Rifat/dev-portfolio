@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import img from "../../images/1.png";
 
 type WorkProps = {};
 
@@ -776,10 +778,23 @@ const Work: React.FC<WorkProps> = () => {
       fullStack: false,
     },
   ];
+
   return (
-    <div>
-      <div className=""></div>
-    </div>
+    <section className="py-[100px] dark:bg-[#212428]">
+      <div className="container mx-auto px-[5%] py-[0.5%]">
+        <div className="grid grid-cols-4 gap-6">
+          {works.map((work) => (
+            <div key={work.id} className="">
+              <Image
+                src={img}
+                className="rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[5px] rounded-br-[5px]"
+                alt="portfolio"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 export default Work;

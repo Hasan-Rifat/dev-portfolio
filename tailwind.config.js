@@ -13,9 +13,9 @@ module.exports = {
     extend: {},
     container: {
       screens: {
-        "3xl": "1920px",
-        "2xl": "1440px",
-        xl: "1240px",
+        /*         "3xl": "1920px",
+        "2xl": "1440px", */
+        xl: "1384px",
         lg: "1024px",
         md: "768px",
         sm: "640px",
@@ -25,7 +25,7 @@ module.exports = {
     screens: {
       "3xl": "1920px",
       "2xl": "1440px",
-      xl: "1200px",
+      xl: "1230px",
       lg: "1024px",
       md: "768px",
       sm: "640px",
