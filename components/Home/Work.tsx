@@ -781,7 +781,7 @@ const Work: React.FC<WorkProps> = () => {
 
   return (
     <section className="py-[100px] dark:bg-[#212428]">
-      <div className="container mx-auto px-[5%] py-[0.5%]">
+      <div className="lg:container mx-auto px-[5%] py-[0.5%]">
         <div className="grid grid-cols-4 gap-6">
           {works.map((work) => (
             <div key={work.id} className="">

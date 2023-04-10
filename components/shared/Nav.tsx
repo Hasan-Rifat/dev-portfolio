@@ -104,7 +104,7 @@ const Nav: React.FC<NavProps> = () => {
                 <TfiMenu className="text-2xl" />
               </button>
               <ul
-                className={` w-full lg:flex lg:items-center lg:justify-end px-2 py-5 rounded-xl gap-2  dark:lg:bg-[#12121200] dark:lg:text-[#fff]
+                className={` w-full lg:flex lg:items-center lg:justify-end px-2 py-5 rounded-xl   dark:lg:bg-[#12121200] dark:lg:text-[#fff]
                dark:text-[#333333]
                   bg-[#333333] text-[#fff]
                   lg:bg-[#0000] lg:text-[#333333]
@@ -115,12 +115,11 @@ const Nav: React.FC<NavProps> = () => {
                 }`}
               >
                 {menu.map((item) => (
-                  <Link className=" block mx-2" href={item.path} key={item.id}>
+                  <Link className=" block mx-5" href={item.path} key={item.id}>
                     <li
                       className="group relative text-xs 2xl:text-xl  dark:hover:text-primary hover:text-primary font-bold  inline-block
                     "
                     >
-                      <span className="mr-1"> {"//"}</span>
                       <span> {item.name}</span>
 
                       <span
