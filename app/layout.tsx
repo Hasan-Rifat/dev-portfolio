@@ -10,10 +10,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  /*   useEffect(() => {
-    localStorage.setItem("theme", "dark");
-  }, []); */
-
   return (
     <html lang="en">
       <body>

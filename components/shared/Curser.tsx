@@ -40,7 +40,7 @@ const Curser: React.FC<CurserProps> = () => {
   return (
     <>
       <div className="cursor fixed top-0 left-0 w-10 h-10 rounded-full border dark:border-[#5cc2d5]  transform -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[99999999] cursor-default opacity-0"></div>
-      <div className="follower fixed top-0 left-0 w-2 h-2 rounded-full dark:bg-[#5cc2d5] bg-primary transform -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[99999999] opacity-0"></div>
+      <div className="follower fixed top-0 left-0 w-2 h-2 rounded-full dark:bg-[#5cc2d5] bg-primary transform -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[99999999] opacity-0 text-accent"></div>
     </>
   );
 };

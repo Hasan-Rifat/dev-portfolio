@@ -66,16 +66,7 @@ const Hero: React.FC<HeroProps> = () => {
             </p>
             <div className="grid grid-cols-2 2xl:grid-cols-3 items-center gap-6">
               <div className=" flex items-center gap-4 w-full col-span-2 2xl:col-span-2">
-                <button
-                  className="text-primary mr-3
-              lg:text-xl lg:leading-[36px] lg:px-[32px] lg:py-[8px]
-              md:text-lg md:leading-[24px] md:px-[32px] md:py-[8px]
-              sm:text-base sm:leading-[20px] sm:px-[24px] sm:py-[6px]
-              text-sm leading-[16px] px-[16px] py-[4px]
-              rounded-[50px] hover:bg-primary hover:text-[#fff] font-bold border-[1px] border-primary"
-                >
-                  About me
-                </button>
+                <button className="btn">About me</button>
                 <strong
                   className=" 
               lg:text-[22px] lg:leading-[24px] 

@@ -7,3 +7,12 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.btn {
+  @apply text-primary mr-3
+   lg:leading-[36px] lg:px-[32px] lg:py-[4px]
+   md:leading-[24px] md:px-[32px] md:py-[4px]
+  sm:text-base sm:leading-[20px] sm:px-[24px] sm:py-[4px]
+  text-sm leading-[16px] px-[16px] py-[4px]
+  rounded-[50px] hover:bg-primary hover:text-[#fff] font-bold border-[1px] border-primary;
+}
