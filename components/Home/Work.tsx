@@ -4,6 +4,8 @@ import img from "../../images/1.png";
 import { FaPlus } from "react-icons/fa";
 import Link from "next/link";
 import Model from "../shared/Model";
+import { useTheme } from "next-themes";
+import dynamic from "next/dynamic";
 
 type WorkProps = {};
 
@@ -14,7 +16,7 @@ const Work: React.FC<WorkProps> = () => {
       url: "https://moon-ecommerce-part-2-client.vercel.app/",
       title: "Moon Tech",
       clientCode: "https://github.com/Hasan-Rifat/moon-ecommerce-part-2-client",
-      categories: ["commerce", "shopping-cart", "shop", "e-commerce", "cart"],
+      categories: ["eCommerce"],
       technology: [
         "react",
         "redux",
@@ -52,7 +54,7 @@ const Work: React.FC<WorkProps> = () => {
       url: "https://book-store-application.vercel.app/",
       title: "Book List",
       clientCode: "https://github.com/Hasan-Rifat/book-store-application",
-      categories: ["booking", "book", "book-list", "book-store"],
+      categories: ["eCommerce"],
       technology: [
         "react",
         " react-redux",
@@ -81,15 +83,9 @@ const Work: React.FC<WorkProps> = () => {
     {
       id: 3,
       url: "https://product-cart-appication.vercel.app/",
-      title: "add Product",
+      title: "Product",
       clientCode: "https://github.com/Hasan-Rifat/Product-Cart-Appication",
-      categories: [
-        "add-product",
-        "product",
-        "product-cart",
-        "product-list",
-        "cart",
-      ],
+      categories: ["eCommerce"],
       technology: ["react", "redux", "uuid", "react-redux", "tailwindcss"],
       descriptions:
         " add product and delete product and update product and search product and filter product and pagination and sort product and add to cart and delete from cart and checkout and payment gateway and order history and order details and a lot of features",
@@ -114,15 +110,7 @@ const Work: React.FC<WorkProps> = () => {
       url: "https://real-estate-hr.vercel.app/",
       title: "Real Estate",
       clientCode: "https://github.com/Hasan-Rifat/real-estate",
-      categories: [
-        "real estate business",
-        "real estate agent",
-        "real estate investment",
-        "real estate websites",
-        "domain real estate",
-        "real estate for sale",
-        "real estate industry",
-      ],
+      categories: ["real estate"],
       technology: [
         "react",
         "redux",
@@ -176,13 +164,7 @@ const Work: React.FC<WorkProps> = () => {
       title: "Flight Booking",
       clientCode:
         "https://github.com/Hasan-Rifat/flight-booking-application-react",
-      categories: [
-        "flight",
-        "booking",
-        "flight-booking",
-        "flight-list",
-        "flight-cart",
-      ],
+      categories: ["eCommerce"],
       technology: ["Redux", "React", "React-Redux", "Tailwind"],
       descriptions:
         "flight booking application using react and redux and tailwind css ",
@@ -207,7 +189,7 @@ const Work: React.FC<WorkProps> = () => {
       url: "https://banking-website.vercel.app/",
       title: "banking website",
       clientCode: "https://github.com/Hasan-Rifat/banking-website",
-      categories: ["banking", "banking website", "banking website"],
+      categories: ["banking website"],
       technology: ["Html", "Css", "Javascript"],
       descriptions: "banking website using html css and javascript",
       serverCode: "",
@@ -233,22 +215,7 @@ const Work: React.FC<WorkProps> = () => {
       clientCode: "https://github.com/Hasan-Rifat/jobbox-client",
       descriptions:
         "A job portal is an online platform that connects job seekers with potential employers. To make the job search process easier, job portals offer a range of features such as advanced search filters, job search functionality, and job alerts and notifications. For employers, job portals provide tools such as applicant management, interview scheduling, and data analytics and reporting. Other features of job portals include career advice and resources for job seekers, company reviews and ratings, and employer branding opportunities. Mobile optimization, integration with social media, and video interviews are also becoming increasingly important features of modern job portals.",
-      categories: [
-        "Accounting/Finance",
-        "Admin/Human Resources",
-        "Arts/Media/Communications",
-        "Building/Construction",
-        "Computer/Information Technology",
-        "Education/Training",
-        "Engineering",
-        "Healthcare",
-        "Hospitality/Restaurant",
-        "Manufacturing/Production",
-        "Sales/Marketing",
-        "Science/Technology",
-        "Transportation/Logistics",
-        "Others",
-      ],
+      categories: ["Job Portal"],
       technology: [
         "React",
         "Redux",
@@ -282,7 +249,7 @@ const Work: React.FC<WorkProps> = () => {
       clientCode: "https://github.com/Hasan-Rifat/FAFC-landing-page",
       descriptions:
         "An NFT landing page is a web page designed to promote and showcase a specific collection of non-fungible tokens (NFTs). NFTs are unique digital assets stored on a blockchain, and landing pages for NFT collections typically provide detailed information about the collection, including its theme, number of tokens available, and any exclusive benefits for token holders. The landing page may feature images or videos of the NFTs, as well as information on the artist or creator of the collection. It may also provide a platform for purchasing the NFTs, as well as information on how to trade or resell them. The goal of an NFT landing page is to generate interest and excitement in the collection, as well as to attract potential buyers and collectors.",
-      categories: ["Landing Page", "NFT", "NFT Landing Page"],
+      categories: ["Landing Page"],
       technology: [
         "React",
         "react-icon",
@@ -321,7 +288,7 @@ const Work: React.FC<WorkProps> = () => {
         "https://github.com/Hasan-Rifat/manufacturer-website-client-side",
       descriptions:
         "An commerce online store is a website that allows businesses to sell their products or services online. Customers can browse product listings, add items to their shopping cart, and make purchases using a secure checkout system. eCommerce stores provide features such as product categorization, search functionality, reviews and ratings, and shipping and tax calculations. They also allow businesses to track inventory, manage orders, and process payments. eCommerce online stores enable businesses to expand their reach, improve their customer experience, and increase their revenue by tapping into the growing online shopping market.",
-      categories: ["tools", "electronic tools", "manufacturer, eCommerces"],
+      categories: ["eCommerce"],
       technology: [
         "daisyui",
         "firebase",
@@ -363,30 +330,7 @@ const Work: React.FC<WorkProps> = () => {
         "https://github.com/Hasan-Rifat/warehouse-management-client-side",
       descriptions:
         "This website is a powerful car inventory management system that allows you to add, update, and remove products with ease. Whether you are managing a small or large inventory, this website makes it simple to keep track of all your products in one place. You can easily add new products to your inventory and update them as needed, ensuring that your records are always accurate and up-to-date. With the ability to remove products that are no longer available, you can keep your inventory organized and avoid confusion. And with the 'My Items 'feature, you can easily see how many products you have added, helping you keep track of your inventory levels and make informed business decisions.",
-      categories: [
-        "New Cars",
-        "Used Cars",
-        "Trucks",
-        "SUVs",
-        "Vans",
-        "Motorcycles",
-        "Boats",
-        "Classic Cars",
-        "Exotic Cars",
-        "Luxury Cars",
-        "Sports Cars",
-        "Electric Cars",
-        "Hybrid Cars",
-        "Compact Cars",
-        "Midsize Cars",
-        "Full-Size Cars",
-        "Convertibles",
-        "Coupes",
-        "Sedans",
-        "Hatchbacks",
-        "Wagons",
-        "Commercial Vehicles",
-      ],
+      categories: ["eCommerce"],
       technology: [
         "axios",
         "bootstrap",
@@ -421,7 +365,7 @@ const Work: React.FC<WorkProps> = () => {
       title: "Bank List",
       clientCode: "https://github.com/Hasan-Rifat/javascript-bank-list",
       descriptions: "bank list with javascript",
-      categories: ["bank list", "javascript"],
+      categories: ["banking website", "javascript"],
       technology: ["HTML", "CSS", "Javascript"],
       serverCode: "",
       fullStack: false,
@@ -445,7 +389,7 @@ const Work: React.FC<WorkProps> = () => {
       title: "Javascript Pig game",
       clientCode: "https://github.com/Hasan-Rifat/javascript-pig-game",
       descriptions: "Javascript Pig game",
-      categories: ["bank list", "javascript"],
+      categories: ["banking website", "javascript"],
       technology: ["HTML", "CSS", "Javascript"],
       serverCode: "",
       update: false,
@@ -468,7 +412,7 @@ const Work: React.FC<WorkProps> = () => {
       title: "Javascript Modal",
       clientCode: "https://github.com/Hasan-Rifat/javascript-modal",
       descriptions: "Javascript Modal",
-      categories: ["Javascript", "Modal"],
+      categories: ["Javascript"],
       technology: ["HTML", "CSS", "Javascript"],
       serverCode: "",
       update: false,
@@ -492,7 +436,7 @@ const Work: React.FC<WorkProps> = () => {
       title: "Javascript Game Gush my number",
       clientCode: "https://github.com/Hasan-Rifat/Guess-My-Number-game",
       descriptions: "javascript game",
-      categories: ["Javascript", "Game"],
+      categories: ["Javascript"],
       technology: ["HTML", "CSS", "Javascript"],
       serverCode: "",
       update: false,
@@ -516,7 +460,7 @@ const Work: React.FC<WorkProps> = () => {
       title: "Simple Landing page",
       clientCode: "https://github.com/Hasan-Rifat/landinge-page-ins",
 
-      categories: ["landing page", "simple"],
+      categories: ["Landing page"],
       technology: ["HTML", "CSS", "Javascript", "tailwindcss", "next js"],
       descriptions: "Landing page with next js",
       serverCode: "",
@@ -542,13 +486,7 @@ const Work: React.FC<WorkProps> = () => {
       clientCode: "https://github.com/Hasan-Rifat/creative-agancy",
       descriptions:
         "As a creative agency, we offer a range of services that can help bring your brand to life. Whether you need web and mobile design, graphic design, or web development, we have the expertise to help you achieve your goals. Our team of skilled designers and developers work closely with you to understand your unique needs and create custom solutions that are tailored to your brand. From creating a beautiful and user-friendly website, to designing eye-catching graphics that grab your audience's attention, we take pride in delivering high-quality work that exceeds expectations. We are passionate about design and development and strive to stay up-to-date with the latest trends and technologies. Whether you are looking to launch a new website, rebrand your company, or create a mobile app, we are here to help you every step of the way. Get in touch with us today to learn more about how we can help bring your vision to life.",
-      categories: [
-        "Design Services",
-        "Web & Mobile Design",
-        "Graphic Design",
-        "Development Services",
-        "Web Development",
-      ],
+      categories: ["creative agency"],
       technology: [
         "aos",
         "axios",
@@ -584,23 +522,7 @@ const Work: React.FC<WorkProps> = () => {
       clientCode: "https://github.com/Hasan-Rifat/independent-service-provider",
       descriptions:
         "Our course website offers a wide range of online courses, utilizing the latest in e-learning technology to provide students with a flexible and convenient learning experience. Our platform provides easy access to our course catalog, allowing students to browse courses by topic and level, and enroll in courses that interest them. Our Course Management System allows students to keep track of their progress, view course schedules and deadlines, and access course materials, including video lectures and homework assignments. The Student Dashboard provides a centralized location for students to manage their coursework and stay on track with their studies. Our Learning Management System (LMS) offers instructors a powerful set of tools for managing and delivering course content, including the ability to create course materials, track student progress, and provide feedback and grades. Instructor profiles allow students to learn more about their instructors and their expertise. Our platform offers a range of features to support student engagement and collaboration, including discussion forums and group projects. We are committed to providing a supportive and engaging learning environment for all of our students, and strive to deliver a high-quality education that is accessible to all. Whether you are looking to advance your career, pursue a new hobby, or simply learn something new, our online courses provide the flexibility and convenience you need to achieve your goals. Join our community of learners today and discover the power of online education!",
-      categories: [
-        "Online Learning",
-        "E-Learning",
-        "Distance Education",
-        "Course Catalog",
-        "Course Management System",
-        "Student Dashboard",
-        "Learning Management System (LMS)",
-        "Online Courses",
-        "Course Schedule",
-        "Enrollment",
-        "Instructor Profiles",
-        "Student Progress Tracking",
-        "Video Lectures",
-        "Homework Assignments",
-        "Discussion Forums",
-      ],
+      categories: ["E-Learning"],
       technology: [
         "bootstrap",
         "firebase",
@@ -628,7 +550,7 @@ const Work: React.FC<WorkProps> = () => {
       url: "https://product-analysis-website-two.vercel.app/",
       title: "product-analysis-",
       clientCode: "https://github.com/Hasan-Rifat/product-analysis-website",
-      categories: ["Landing page", "simple", "watch"],
+      categories: ["Landing page"],
       technology: ["react", "react-router-dom", "tailwindcss", "recharts"],
       descriptions:
         "Welcome to our watch landing page, where you will find a wide selection of high-quality watches to suit your style and needs.Our collection includes watches from top brands, carefully curated to offer you the best in style and function. From classic timepieces to modern designs, we have a watch for every taste and occasion.Our watches are made with the finest materials and precision engineering, ensuring reliable performance and long-lasting durability. Whether you are looking for a watch to wear every day or a special occasion, we have the perfect option for you. Our website is designed with you in mind, making it easy to browse our collection and find the perfect watch for you. We offer a range of features to help you make an informed decision, including detailed product descriptions, high-quality images, and customer reviews. Our secure checkout process ensures that your purchase is safe and easy, and our customer support team is always here to help with any questions or concerns. At our watch landing page, we are committed to offering the best in quality, style, and customer service. Browse our collection today and find the perfect watch for you!",
@@ -675,14 +597,7 @@ const Work: React.FC<WorkProps> = () => {
       clientCode: "https://github.com/Hasan-Rifat/-phone-hunter",
       descriptions:
         "Welcome to our latest mobile phones page, where you will find a comprehensive selection of the newest and most advanced smartphones on the market. Our collection includes the latest models from top brands, including Apple, Samsung, Google, and more. Each phone is carefully selected for its cutting-edge features, including high-quality cameras, fast processors, and long-lasting batteries. Our website is designed to make it easy for you to find the perfect phone for your needs, with features like detailed product descriptions, high-quality images, and customer reviews. We also offer a range of accessories to enhance your phone's performance and protect it from damage. Our secure checkout process ensures that your purchase is safe and easy, and our customer support team is always available to help with any questions or concerns. Whether you are looking for a phone with the latest technology or a budget-friendly option, we have something for everyone. At our latest mobile phones page, we are committed to offering the best in quality, selection, and customer service. Browse our collection today and find the perfect phone for you!",
-      categories: [
-        "Brand",
-        "Operating System",
-        "Features",
-        "Price Range",
-        "Camera Quality",
-        "Battery Life",
-      ],
+      categories: ["eCommerce"],
       technology: ["HTML", "CSS", "javascript"],
       serverCode: "",
       update: false,
@@ -702,7 +617,7 @@ const Work: React.FC<WorkProps> = () => {
       title: "phone hunter",
       clientCode: "https://github.com/Hasan-Rifat/money-master",
       descriptions: "Monthly expenses, Monthly income,Total balance",
-      categories: ["Monthly expenses", "Monthly income", "Total balance"],
+      categories: ["banking website"],
       technology: ["HTML", "CSS", "javascript"],
       serverCode: "",
       fullStack: false,
@@ -723,7 +638,7 @@ const Work: React.FC<WorkProps> = () => {
       clientCode: "https://github.com/Hasan-Rifat/-convention-center",
       descriptions:
         "Welcome to our convention center booking page, where you can book a venue for your next event.Our convention center offers a variety of flexible spaces that can accommodate events of all sizes, from small meetings to large conferences and exhibitions. Our state-of-the-art facilities are equipped with the latest technology and amenities to ensure your event is a success.Our experienced event planning team is available to help you every step of the way, from choosing the right space to coordinating catering and audio-visual services. We are committed to making your event a seamless and unforgettable experience.Our website is designed to make it easy for you to find the perfect space for your event. You can browse our venues, view detailed floor plans, and check availability online. Our online booking system is simple and secure, ensuring that your reservation is confirmed quickly and easily. We also offer a range of customizable event packages to suit your needs and budget. Whether you are planning a business conference, trade show, or social event, we have the perfect package for you. At our convention center, we are committed to providing the best in service, technology, and amenities. Contact us today to book your next event at our state-of-the-art facility.",
-      categories: ["Landing Page", "convention center"],
+      categories: ["Landing Page"],
       technology: ["react", "react-router-dom", "tailwindcss"],
       serverCode: "",
       update: false,
@@ -744,17 +659,7 @@ const Work: React.FC<WorkProps> = () => {
       clientCode: "https://github.com/Hasan-Rifat/doctors-protal-clinent",
       descriptions:
         "Welcome to our online doctor appointment booking page, where you can easily schedule an appointment with a medical professional of your choice. Our platform offers a comprehensive list of doctors and medical professionals in various fields, from general practitioners to specialists. You can easily search for doctors by location, specialty, and availability, making it easy to find the right doctor for your needs. Our online booking system is user-friendly and secure, ensuring that your personal information is safe and your appointment is confirmed quickly and easily. You can choose a time and date that works for you, and receive confirmation of your appointment via email or text message. Our doctors are experienced professionals who are dedicated to providing the best possible care for their patients. They use the latest medical technology and techniques to provide accurate diagnoses and effective treatments. In addition to booking appointments, our platform also offers other features to help you manage your healthcare needs. You can access your medical records, view test results, and communicate with your doctor through secure messaging. At our online doctor appointment booking platform, we are committed to making healthcare more accessible and convenient for everyone. Book your next appointment today and experience the ease and convenience of our platform.",
-      categories: [
-        "Medical Specialties",
-        "Location",
-        "Doctor Ratings",
-        "Availability",
-        "Insurance Accepted",
-        "Virtual Appointments",
-        "Languages Spoken",
-        "Gender",
-        "Years of Experience",
-      ],
+      categories: ["appointment booking", "eCommerce"],
       technology: [
         "react",
         "react-router-dom",
@@ -785,20 +690,7 @@ const Work: React.FC<WorkProps> = () => {
       clientCode: "https://github.com/Hasan-Rifat/genius-car-service",
       descriptions:
         "Engine and Transmission Repair involves repairing or replacing engine and transmission components, including tune-ups, oil changes, engine rebuilding, and transmission repair. Electrical System Repair involves repairing or replacing the electrical components of the car, including battery replacement, alternator repair, and wiring repair. Brake System Repair involves repairing or replacing brake system components, including brake pads, rotors, calipers, and brake lines. Suspension and Steering Repair involves repairing or replacing suspension and steering components, including shocks, struts, ball joints, tie rods, and steering racks. Cooling System Repair involves repairing or replacing cooling system components, including the radiator, water pump, thermostat, and hoses. Exhaust System Repair involves repairing or replacing exhaust system components, including the muffler, catalytic converter, and exhaust pipes. Fuel System Repair involves repairing or replacing fuel system components, including the fuel pump, fuel filter, and fuel injectors. Air Conditioning Repair involves repairing or replacing air conditioning system components, including the compressor, evaporator, and condenser. Wheel Alignment and Balancing involves adjusting the alignment and balancing of the wheels to ensure proper handling and reduce tire wear. Body and Paint Repair involves repairing or replacing the body and paint of the car, including dent repair, scratch repair, and repainting. Interior Repair involves repairing or replacing interior components of the car, including the seats, dashboard, and carpeting. Glass and Windshield Repair involves repairing or replacing the glass and windshield of the car, including chip repair and replacement.",
-      categories: [
-        "Engine and Transmission Repair",
-        "Electrical System Repair",
-        "Brake System Repair",
-        "Suspension and Steering Repair",
-        "Cooling System Repair",
-        "Exhaust System Repair",
-        "Fuel System Repair",
-        "Air Conditioning Repair",
-        "Wheel Alignment and Balancing",
-        "Body and Paint Repair",
-        "Interior Repair",
-        "Glass and Windshield Repair",
-      ],
+      categories: ["eCommerce"],
       technology: [
         "react",
         "react-router-dom",
@@ -830,32 +722,7 @@ const Work: React.FC<WorkProps> = () => {
       clientCode: "https://github.com/Hasan-Rifat/ema-john",
       descriptions:
         "An commerce online store is a website that allows businesses to sell their products or services online. Customers can browse product listings, add items to their shopping cart, and make purchases using a secure checkout system. eCommerce stores provide features such as product categorization, search functionality, reviews and ratings, and shipping and tax calculations. They also allow businesses to track inventory, manage orders, and process payments. eCommerce online stores enable businesses to expand their reach, improve their customer experience, and increase their revenue by tapping into the growing online shopping market.",
-      categories: [
-        "Apparel and Accessories",
-        "Electronics",
-        "Home and Garden",
-        "Beauty and Personal Care",
-        "Toys and Games",
-        "Sports and Outdoors",
-        "Books, Music, and Movies",
-        "Food and Beverage",
-        "Automotive and Industrial",
-        "Health and Wellness",
-        "Pet Supplies",
-        "Office Supplies and Equipment",
-        "Travel and Luggage",
-        "Arts and Crafts",
-        "Business and Industrial",
-        "Education and Training",
-        "eCommerce",
-        "shopping",
-        "online store",
-        "shopping cart",
-        "checkout",
-        "payment",
-        "inventory",
-        "orders",
-      ],
+      categories: ["eCommerce"],
       technology: [
         "react",
         "firebase",
@@ -882,27 +749,7 @@ const Work: React.FC<WorkProps> = () => {
       clientCode: "https://github.com/Hasan-Rifat/Crypto-Cafe",
       descriptions:
         "A cryptocurrency website provides information and resources related to digital currencies such as Bitcoin and Ethereum. These websites offer real-time updates on prices, market capitalization, and trading volumes, as well as news and analysis about the cryptocurrency industry. Users can also access wallet services, exchanges, and other tools for buying, selling, and storing cryptocurrencies.",
-      categories: [
-        "Market Data",
-        "News and Analysis",
-        "Wallet Services",
-        "Exchanges",
-        "Payment Services",
-        "Education and Resources",
-        "ICO Listings",
-        "Community and Social",
-        "Blockchain",
-        "cryptocurrency",
-        "bitcoin",
-        "ethereum",
-        "litecoin",
-        "ripple",
-        "bitcoin cash",
-        "eos",
-        "stellar",
-        "cardano",
-        "crypto website",
-      ],
+      categories: ["eCommerce"],
       technology: ["react", "react-router-dom", "tailwindcss"],
       serverCode: "",
       update: false,
@@ -923,32 +770,7 @@ const Work: React.FC<WorkProps> = () => {
       clientCode: "https://github.com/Hasan-Rifat/tshirt-mania",
       descriptions:
         "An commerce online store is a website that allows businesses to sell their products or services online. Customers can browse product listings, add items to their shopping cart, and make purchases using a secure checkout system. eCommerce stores provide features such as product categorization, search functionality, reviews and ratings, and shipping and tax calculations. They also allow businesses to track inventory, manage orders, and process payments. eCommerce online stores enable businesses to expand their reach, improve their customer experience, and increase their revenue by tapping into the growing online shopping market.",
-      categories: [
-        "Apparel and Accessories",
-        "Electronics",
-        "Home and Garden",
-        "Beauty and Personal Care",
-        "Toys and Games",
-        "Sports and Outdoors",
-        "Books, Music, and Movies",
-        "Food and Beverage",
-        "Automotive and Industrial",
-        "Health and Wellness",
-        "Pet Supplies",
-        "Office Supplies and Equipment",
-        "Travel and Luggage",
-        "Arts and Crafts",
-        "Business and Industrial",
-        "Education and Training",
-        "eCommerce",
-        "shopping",
-        "online store",
-        "shopping cart",
-        "checkout",
-        "payment",
-        "inventory",
-        "orders",
-      ],
+      categories: ["eCommerce"],
       technology: ["react", "react-router-dom", "tailwindcss"],
       serverCode: "",
       update: false,
@@ -968,7 +790,7 @@ const Work: React.FC<WorkProps> = () => {
       title: "Bank",
       clientCode: "https://github.com/Hasan-Rifat/bank",
       descriptions: "Bank website",
-      categories: ["Bank"],
+      categories: ["banking website"],
       technology: ["HTML", "CSS", "Javascript"],
       serverCode: "",
       update: false,
@@ -988,7 +810,7 @@ const Work: React.FC<WorkProps> = () => {
       title: "kopa-samsu",
       clientCode: "https://github.com/Hasan-Rifat/-kopa-samsu",
       descriptions: "rifle website",
-      categories: ["eCommerce, shopping, online store, shopping cart"],
+      categories: ["eCommerce"],
       technology: ["react", "react-icons", "react-modal"],
       serverCode: "",
       update: false,
@@ -1009,7 +831,7 @@ const Work: React.FC<WorkProps> = () => {
       clientCode: "https://github.com/Hasan-Rifat/pandacommerce",
       descriptions:
         "An commerce online store is a website that allows businesses to sell their products or services online. Customers can browse product listings, add items to their shopping cart, and make purchases using a secure checkout system. eCommerce stores provide features such as product categorization, search functionality, reviews and ratings, and shipping and tax calculations. They also allow businesses to track inventory, manage orders, and process payments. eCommerce online stores enable businesses to expand their reach, improve their customer experience, and increase their revenue by tapping into the growing online shopping market.",
-      categories: ["eCommerces"],
+      categories: ["eCommerce"],
       technology: ["HTML", "CSS", "Bootstrap"],
       serverCode: "",
       update: false,
@@ -1030,7 +852,7 @@ const Work: React.FC<WorkProps> = () => {
       title: "Influencer products",
       clientCode: "https://github.com/Hasan-Rifat/Influencer-products",
       descriptions: "",
-      categories: ["influencer-products, shopping, online store, eCommerce"],
+      categories: ["eCommerce"],
       technology: ["HTML", "CSS", "Bootstrap"],
       serverCode: "",
       update: false,
@@ -1094,7 +916,7 @@ const Work: React.FC<WorkProps> = () => {
       clientCode: "https://github.com/Hasan-Rifat/hot-gadgets",
       descriptions:
         "An commerce online store is a website that allows businesses to sell their products or services online. Customers can browse product listings, add items to their shopping cart, and make purchases using a secure checkout system. eCommerce stores provide features such as product categorization, search functionality, reviews and ratings, and shipping and tax calculations. They also allow businesses to track inventory, manage orders, and process payments. eCommerce online stores enable businesses to expand their reach, improve their customer experience, and increase their revenue by tapping into the growing online shopping market.",
-      categories: ["landing page, eCommerce, shopping, online store"],
+      categories: ["Landing page", "eCommerce"],
       technology: ["HTML", "CSS", "Bootstrap"],
       serverCode: "",
       update: false,
@@ -1132,40 +954,88 @@ const Work: React.FC<WorkProps> = () => {
       ],
     },
   ];
-
+  const [search, setSearch] = useState<string>("");
   const [open, setOpen] = useState<boolean>(false);
+  const { theme } = useTheme();
+  let count = open ? works.length : 8;
+
+  const data = works.map((work) =>
+    work.categories.map((item) => item.toLowerCase())
+  );
+  const allCategory: any = new Set(data.flat());
+  const unique = ["all", ...allCategory].sort();
 
   return (
     <section className="py-[100px] dark:bg-[#212428] ">
-      <div className="lg:container mx-auto px-[5%] py-[0.5%]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {works.slice(0, 8).map((item) => (
-            <div
-              key={item.id}
-              className={`dark:bg-[#212430] dark:text-[#fff] overflow-hidden group grid h-full w-full items-center rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[5px] rounded-br-[5px] shadow-lg shadow-indigo-500/40 dark:shadow-[0_0_50px_0_rgba(0,0,0,0.5)]`}
-            >
-              <Image src={img} className="w-full h-full " alt="portfolio" />
-
-              <div className="p-6 flex justify-between items-center gap-1 ">
-                <h3 className="text-base font-semibold">{item.title}</h3>
-                <Link
-                  href={`/projects/${item.id}`}
-                  className=" bg-[#fff0] hover:bg-primary hover:text-[#fff] font-medium border border-primary p-1.5 px-10 rounded-[50px] text-sm"
-                  onClick={() => setOpen(true)}
-                >
-                  Details
-                </Link>
-                {/* {open && <Model open={open} setOpen={setOpen} item={item} />} */}
-              </div>
+      <div className="lg:container mx-auto px-[5%] py-[0.5%] relative">
+        {/* portfolio catagories */}
+        <div className="flex gap-3 flex-wrap justify-center mb-10 max-w-[100%] mx-auto ">
+          {theme === "dark" && (
+            <>
+              <div className="absolute -right-10 h-[232px] w-[232px] rounded-[50%] opacity-50 blur-[115px] bg-[#7f11e0] z-10"></div>
+              <div className="absolute bottom-0 left-0 h-[232px] w-[232px] rounded-[50%] opacity-50 blur-[115px] bg-[#ff5832] z-10"></div>
+            </>
+          )}
+          {unique.map((item) => (
+            <div className=" " key={item}>
+              <button
+                onClick={() => setSearch(item)}
+                className={`text-[#1f1f1f] text-sm px-3 py-1 capitalize rounded-full
+                shadow-lg shadow-indigo-500/40 
+               
+                ${item.length % 2 === 0 && "bg-[#ddf7e3]"}
+                ${item.length % 2 !== 0 && "bg-[#f6f7c1]"}
+                ${item.length % 3 !== 0 && "bg-[#ffd4d4] "}
+        `}
+              >
+                {item}
+              </button>
             </div>
           ))}
         </div>
+        {/* portfolios */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {works
+            .slice(0, count)
+            .filter((item: any) => {
+              if (item.categories.toLowerCase().includes(search)) {
+                return true;
+              }
+
+              return item;
+            })
+            .map((item) => (
+              <div
+                key={item.id}
+                className={`dark:bg-[#212430] dark:text-[#fff] overflow-hidden group grid h-full w-full items-center rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[5px] rounded-br-[5px] shadow-lg shadow-indigo-500/40 dark:shadow-[0_0_50px_0_rgba(0,0,0,0.5)]
+              hover:translate-y-[-10px] transition duration-500
+              z-[99]
+              `}
+              >
+                <Image src={img} className="w-full h-full " alt="portfolio" />
+
+                <div className="p-6 flex justify-between items-center gap-1 ">
+                  <h3 className="text-base font-semibold">{item.title}</h3>
+                  <Link
+                    href={`/projects/${item.id}`}
+                    className=" bg-[#fff0] hover:bg-primary hover:text-[#fff] font-medium border border-primary p-1.5 px-10 rounded-[50px] text-sm"
+                  >
+                    Details
+                  </Link>
+                  {/* {open && <Model open={open} setOpen={setOpen} item={item} />} */}
+                </div>
+              </div>
+            ))}
+        </div>
 
         <div className="flex justify-center py-12">
-          <button className="btn">show more</button>
+          <button onClick={() => setOpen(!open)} className="btn">
+            {open ? "See less" : "show more"}
+          </button>
         </div>
       </div>
     </section>
   );
 };
-export default Work;
+
+export default dynamic(() => Promise.resolve(Work), { ssr: false });
