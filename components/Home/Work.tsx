@@ -522,7 +522,7 @@ const Work: React.FC<WorkProps> = () => {
       clientCode: "https://github.com/Hasan-Rifat/independent-service-provider",
       descriptions:
         "Our course website offers a wide range of online courses, utilizing the latest in e-learning technology to provide students with a flexible and convenient learning experience. Our platform provides easy access to our course catalog, allowing students to browse courses by topic and level, and enroll in courses that interest them. Our Course Management System allows students to keep track of their progress, view course schedules and deadlines, and access course materials, including video lectures and homework assignments. The Student Dashboard provides a centralized location for students to manage their coursework and stay on track with their studies. Our Learning Management System (LMS) offers instructors a powerful set of tools for managing and delivering course content, including the ability to create course materials, track student progress, and provide feedback and grades. Instructor profiles allow students to learn more about their instructors and their expertise. Our platform offers a range of features to support student engagement and collaboration, including discussion forums and group projects. We are committed to providing a supportive and engaging learning environment for all of our students, and strive to deliver a high-quality education that is accessible to all. Whether you are looking to advance your career, pursue a new hobby, or simply learn something new, our online courses provide the flexibility and convenience you need to achieve your goals. Join our community of learners today and discover the power of online education!",
-      categories: ["E-Learning"],
+      categories: ["e-learning"],
       technology: [
         "bootstrap",
         "firebase",
@@ -954,7 +954,7 @@ const Work: React.FC<WorkProps> = () => {
       ],
     },
   ];
-  const [search, setSearch] = useState<string>("");
+  const [search, setSearch] = useState<string>("all");
   const [open, setOpen] = useState<boolean>(false);
   const { theme } = useTheme();
   let count = open ? works.length : 8;
@@ -996,13 +996,17 @@ const Work: React.FC<WorkProps> = () => {
         {/* portfolios */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {works
-            .slice(0, count)
-            .filter((item: any) => {
-              if (item.categories.toLowerCase().includes(search)) {
-                return true;
+            // .slice(0, count)
+            .filter((item) => {
+              if (search === "all") {
+                return item;
+              } else if (
+                item.categories
+                  .map((item) => item.toLowerCase())
+                  .includes(search)
+              ) {
+                return item;
               }
-
-              return item;
             })
             .map((item) => (
               <div
@@ -1030,7 +1034,7 @@ const Work: React.FC<WorkProps> = () => {
 
         <div className="flex justify-center py-12">
           <button onClick={() => setOpen(!open)} className="btn">
-            {open ? "See less" : "show more"}
+            {open ? "See less" : "see more"}
           </button>
         </div>
       </div>
