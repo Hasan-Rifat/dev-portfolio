@@ -957,14 +957,13 @@ const Work: React.FC<WorkProps> = () => {
   const [search, setSearch] = useState<string>("all");
   const [open, setOpen] = useState<boolean>(false);
   const { theme } = useTheme();
-  let count = open ? works.length : 8;
 
   const data = works.map((work) =>
     work.categories.map((item) => item.toLowerCase())
   );
   const allCategory: any = new Set(data.flat());
   const unique = ["all", ...allCategory].sort();
-
+  let count = open ? works.length : 8;
   return (
     <section className="py-[100px] dark:bg-[#212428] ">
       <div className="lg:container mx-auto px-[5%] py-[0.5%] relative">
@@ -996,7 +995,7 @@ const Work: React.FC<WorkProps> = () => {
         {/* portfolios */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {works
-            // .slice(0, count)
+
             .filter((item) => {
               if (search === "all") {
                 return item;
@@ -1008,6 +1007,7 @@ const Work: React.FC<WorkProps> = () => {
                 return item;
               }
             })
+            .slice(0, count)
             .map((item) => (
               <div
                 key={item.id}
