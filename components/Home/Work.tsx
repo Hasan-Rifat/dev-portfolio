@@ -964,6 +964,7 @@ const Work: React.FC<WorkProps> = () => {
   const allCategory: any = new Set(data.flat());
   const unique = ["all", ...allCategory].sort();
   let count = open ? works.length : 8;
+
   return (
     <section className="py-[100px] dark:bg-[#212428] ">
       <div className="lg:container mx-auto px-[5%] py-[0.5%] relative">
@@ -979,7 +980,7 @@ const Work: React.FC<WorkProps> = () => {
             <div className=" " key={item}>
               <button
                 onClick={() => setSearch(item)}
-                className={`text-[#1f1f1f] text-sm px-3 py-1 capitalize rounded-full
+                className={`text-[#1f1f1f] text-sm px-3 py-1 capitalize rounded-xl
                 shadow-lg shadow-indigo-500/40 
                
                 ${item.length % 2 === 0 && "bg-[#ddf7e3]"}
@@ -995,7 +996,6 @@ const Work: React.FC<WorkProps> = () => {
         {/* portfolios */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {works
-
             .filter((item) => {
               if (search === "all") {
                 return item;
@@ -1008,13 +1008,13 @@ const Work: React.FC<WorkProps> = () => {
               }
             })
             .slice(0, count)
-            .map((item) => (
+            .map((item, i, arr) => (
               <div
                 key={item.id}
                 className={`dark:bg-[#212430] dark:text-[#fff] overflow-hidden group grid h-full w-full items-center rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[5px] rounded-br-[5px] shadow-lg shadow-indigo-500/40 dark:shadow-[0_0_50px_0_rgba(0,0,0,0.5)]
-              hover:translate-y-[-10px] transition duration-500
-              z-[99]
-              `}
+            hover:translate-y-[-10px] transition duration-500
+            z-[99]
+            `}
               >
                 <Image src={img} className="w-full h-full " alt="portfolio" />
 

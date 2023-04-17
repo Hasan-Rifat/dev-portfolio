@@ -48,7 +48,7 @@ const Services: React.FC<ServicesProps> = () => {
     },
   ];
   return (
-    <section className="py-[100px] dark:bg-[#212428]">
+    <section className="py-[100px] dark:bg-[#212428] bg-[#ebf1f6]">
       <div className="xl:container mx-auto px-[5%] py-[0.5%]">
         <div className="lg:flex lg:items-center lg:gap-[118px]">
           <div className="">

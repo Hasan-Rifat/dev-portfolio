@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
-import heroLeftImg from "../../images/hero-left.svg";
+
+import heroLeftImg from "../../images/aboutme.png";
 import { useTheme } from "next-themes";
-import darkBg from "../../images/hero-bg-img-dark.png";
-import lightBg from "../../images/hero-bg-img-light.png";
 import Image from "next/image";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -17,7 +16,8 @@ const Hero: React.FC<HeroProps> = () => {
 
   return (
     <section
-      className={`h-screen flex items-center  border-b-[1px] dark:border-accent border-[#0000] dark:bg-[#212428] bg-[#dde5ef] overflow-hidden`}
+      className={`h-screen flex items-center  border-b-[1px] dark:border-accent border-[#0000] dark:bg-[#212428] bg-[#ebf1f6] overflow-hidden`}
+      //bg-[#dde5ef]
     >
       <div className="xl:container mx-auto px-[5%] py-[0.5%] ">
         <div className="md:grid md:grid-cols-8 gap-5 xl:gap-10 2xl:gap-20 md:items-center">

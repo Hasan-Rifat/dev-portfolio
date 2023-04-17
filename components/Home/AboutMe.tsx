@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import img from "../../images/aboutme.png";
+import img from "../../images/hero-left.svg";
 import { BsRecordCircle } from "react-icons/bs";
 import { FaHome } from "react-icons/fa";
 
@@ -18,9 +18,12 @@ const AboutMe: React.FC<AboutMeProps> = () => {
     { id: 8, title: "Language", text: "English, Bangla" },
   ];
   return (
-    <section className="py-[400px] h-screen flex items-center  border-b-[1px] dark:border-accent border-[#0000] dark:bg-success bg-[#ebf1f6] ">
+    <section
+      className="py-[400px] h-screen flex items-center  border-b-[1px] dark:border-accent border-[#0000] dark:bg-success"
+      //bg-[#ebf1f6]
+    >
       <div className="xl:container mx-auto px-[5%] py-[0.5%]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 ">
           <div>
             <div>
               <div className="">
@@ -41,14 +44,14 @@ const AboutMe: React.FC<AboutMeProps> = () => {
             text-secondary dark:text-[#fff]
             "
                 >
-                  I can development full stack web application
+                  MERN Stack Developer
                 </h3>
               </div>
             </div>
             <h5 className="text-center lg:text-left font-semibold text-primary text-3xl leading-9 py-5">
               PERSONAL INFOS
             </h5>
-            <ul className="grid 2xl:grid-cols-2 gap-1 p-5">
+            {/*  <ul className="grid 2xl:grid-cols-2 gap-1 p-5">
               {info.map(({ id, title, text }) => (
                 <li
                   key={id}
@@ -64,13 +67,33 @@ const AboutMe: React.FC<AboutMeProps> = () => {
                   </div>
                 </li>
               ))}
-            </ul>
+            </ul> */}
+            <p
+              className="dark:text-[#e2e8f0] text-[#4e545d]
+       
+              md:text-[18px] md:leading-[28px] md:mb-[20px] md:mt-[10px]
+            sm:text-[16px] sm:leading-[24px] mb-[10px] mt-[5px]
+            text-[14px] leading-[20px] "
+            >
+              I'm Hasan Rifat and I am passionate about web development. I work
+              a minimum of 13-14 hours every day because I love it. it's my
+              life's work. <br /> My goal is to satisfy clients by understanding
+              what they want for their website, helping them from the beginning
+              to the end of the project, and providing support for any problems.
+              <br />
+              If needed, I communicate through video or audio conversations to
+              understand project requirements and resolve issues. After
+              completing websites and projects, I provide instructions on how
+              clients can manage, edit, update, add pages and posts to their
+              website by themselves. If necessary, I can also send video
+              tutorials.
+            </p>
           </div>
           <div className="p-20 relative">
             <Image
               src={img}
               alt="about me image"
-              className="rounded-xl "
+              className=" dark:bg-[#181a1d] bg-[#fff] p-16 rounded-xl shadow-xl"
               fill
             />
           </div>
