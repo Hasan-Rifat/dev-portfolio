@@ -48,17 +48,22 @@ const Services: React.FC<ServicesProps> = () => {
     },
   ];
   return (
-    <section className="py-[100px] dark:bg-[#212428] bg-[#ebf1f6]">
+    <section
+      className="py-[100px] dark:bg-[#212428] bg-[#ebf1f6]" //
+    >
       <div className="xl:container mx-auto px-[5%] py-[0.5%]">
         <div className="lg:flex lg:items-center lg:gap-[118px]">
           <div className="">
-            <h5 className="text-center lg:text-left font-semibold text-primary text-2xl leading-9">
-              CREATIVE SERVICE
+            <h5
+              className="text-left font-semibold text-primary 
+            text-base leading-9 capitalize"
+            >
+              creative services
             </h5>
             <h3
               className="
-              my-4
-              text-center lg:text-left
+           
+              text-left
             2xl:text-5xl 2xl:leading-[58px]
             xl:text-4xl xl:leading-[48px]
             lg:text-3xl lg:leading-[38px]
@@ -66,14 +71,14 @@ const Services: React.FC<ServicesProps> = () => {
             sm:text-xl sm:leading-[18px]
             text-lg leading-[18px]
             font-bold
-            text-secondary dark:text-[#fff]
+            text-secondary dark:text-[#fff] capitalize
             "
             >
-              What can i do for service clients you
+              What i do
             </h3>
           </div>
           <div className="mt-4 md:mt-0">
-            <p className="text-center lg:text-left lg:max-w-[472px] w-full">
+            <p className="text-left lg:max-w-[472px] w-full">
               Promote your blog posts, case udie, and product ouncems with the
               the branded videoscustomers coming back for services Makes best
               effort.
@@ -85,6 +90,7 @@ const Services: React.FC<ServicesProps> = () => {
             <div
               key={id}
               className="
+              bg-[#fff] dark:bg-[#2b2e33]
               z-20
               relative
               px-[40px] py-[50px] 
@@ -118,7 +124,7 @@ const Services: React.FC<ServicesProps> = () => {
                 <h4 className="text-[25px] leading-[37.5px] mt-[20px] mb-[15px] font-bold">
                   {title}
                 </h4>
-                <p className="text-lg leading-7 text-justify dark:text-[#adb5bd] text-[#666] ">
+                <p className="text-lg leading-7  dark:text-[#adb5bd] text-[#666] ">
                   {text}
                 </p>
               </div>

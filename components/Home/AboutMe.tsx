@@ -27,30 +27,18 @@ const AboutMe: React.FC<AboutMeProps> = () => {
           <div>
             <div>
               <div className="">
-                <h5 className="text-center lg:text-left font-semibold text-primary text-2xl leading-9">
-                  ABOUT ME
-                </h5>
-                <h3
+                <h2
                   className="
-              my-4
-              text-center lg:text-left
-            2xl:text-5xl 2xl:leading-[58px]
-            xl:text-4xl xl:leading-[48px]
-            lg:text-3xl lg:leading-[38px]
-            md:text-2xl md:leading-[28px]
-            sm:text-xl sm:leading-[18px]
-            text-lg leading-[18px]
-            font-bold
-            text-secondary dark:text-[#fff]
-            "
+            xl:text-4xl
+            md:text-[32px] md:leading-[44px]
+            sm:text-[30px] sm:leading-[40px]
+            text-[24px] leading-[36px] 
+            dark:text-[#fff] text-secondary font-extrabold"
                 >
-                  MERN Stack Developer
-                </h3>
+                  <span className="dark:text-primary"> ABOUT</span> ME
+                </h2>
               </div>
             </div>
-            <h5 className="text-center lg:text-left font-semibold text-primary text-3xl leading-9 py-5">
-              PERSONAL INFOS
-            </h5>
             {/*  <ul className="grid 2xl:grid-cols-2 gap-1 p-5">
               {info.map(({ id, title, text }) => (
                 <li
@@ -68,32 +56,37 @@ const AboutMe: React.FC<AboutMeProps> = () => {
                 </li>
               ))}
             </ul> */}
-            <p
+            <div
               className="dark:text-[#e2e8f0] text-[#4e545d]
        
-              md:text-[18px] md:leading-[28px] md:mb-[20px] md:mt-[10px]
-            sm:text-[16px] sm:leading-[24px] mb-[10px] mt-[5px]
-            text-[14px] leading-[20px] "
+             
+              lg:text-[20px] leading-[26px] sm:leading-8 
+              md:text-[18px] 
+              sm:text-[16px]  py-[20px] sm:pt-[20px] sm:pb-[25px]
+              text-[14px]  "
             >
-              I'm Hasan Rifat and I am passionate about web development. I work
-              a minimum of 13-14 hours every day because I love it. it's my
-              life's work. <br /> My goal is to satisfy clients by understanding
-              what they want for their website, helping them from the beginning
-              to the end of the project, and providing support for any problems.
-              <br />
-              If needed, I communicate through video or audio conversations to
-              understand project requirements and resolve issues. After
-              completing websites and projects, I provide instructions on how
-              clients can manage, edit, update, add pages and posts to their
-              website by themselves. If necessary, I can also send video
-              tutorials.
-            </p>
+              <p className="font-semibold mb-4">
+                I'm Hasan Rifat and I am passionate about web development. I
+                work a minimum of 13-14 hours every day because I love it.
+              </p>
+              <p className="">
+                it's my life's work. My goal is to satisfy clients by
+                understanding what they want for their website, helping them
+                from the beginning to the end of the project, and providing
+                support for any problems. If needed, I communicate through video
+                or audio conversations to understand project requirements and
+                resolve issues. After completing websites and projects, I
+                provide instructions on how clients can manage, edit, update,
+                add pages and posts to their website by themselves. If
+                necessary, I can also send video tutorials.
+              </p>
+            </div>
           </div>
           <div className="p-20 relative">
             <Image
               src={img}
               alt="about me image"
-              className=" dark:bg-[#181a1d] bg-[#fff] p-16 rounded-xl shadow-xl"
+              className=" dark:bg-[#181a1d] bg-[#fff]  rounded-xl shadow-xl"
               fill
             />
           </div>

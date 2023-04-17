@@ -22,6 +22,7 @@ module.exports = {
         xs: "480px",
       },
     },
+    */
     screens: {
       "3xl": "1920px",
       "2xl": "1440px",
@@ -30,7 +31,7 @@ module.exports = {
       md: "768px",
       sm: "640px",
       xs: "480px",
-    }, */
+    },
     colors: {
       primary: "#ee5f38",
       secondary: "#000248",

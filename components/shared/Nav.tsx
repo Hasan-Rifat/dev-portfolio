@@ -72,7 +72,7 @@ const Nav: React.FC<NavProps> = () => {
             : ""
         }`}
       >
-        <div className="lg:container mx-auto px-[5%] py-[0.5%]">
+        <div className="container mx-auto px-[5%] py-[2.5%] sm:py-[0.5%]">
           <div className="grid grid-cols-4 items-center">
             <div className="col-span-2 md:col-span-1">
               <h2>
@@ -99,9 +99,9 @@ const Nav: React.FC<NavProps> = () => {
             >
               <button
                 onClick={() => setOpen(!open)}
-                className="block lg:hidden ml-auto"
+                className={`block lg:hidden ml-auto dark:text-[#fff] text-success`}
               >
-                <TfiMenu className="text-2xl" />
+                <TfiMenu className={`text-2xl `} />
               </button>
               <ul
                 className={` w-full lg:flex lg:items-center lg:justify-end px-2 py-5 rounded-xl   dark:lg:bg-[#12121200] dark:lg:text-[#fff]

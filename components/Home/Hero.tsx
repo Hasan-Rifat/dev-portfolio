@@ -12,8 +12,6 @@ import Link from "next/link";
 type HeroProps = {};
 
 const Hero: React.FC<HeroProps> = () => {
-  const { theme } = useTheme();
-
   return (
     <section
       className={`h-screen flex items-center  border-b-[1px] dark:border-accent border-[#0000] dark:bg-[#212428] bg-[#ebf1f6] overflow-hidden`}
@@ -30,55 +28,42 @@ const Hero: React.FC<HeroProps> = () => {
           md:mt-0 mt-10
           "
           >
-            <h4 className="text-2xl leading-9 text-primary">HELLO I&apos;M</h4>
-            <h2
-              className="
-            2xl:text-[60px] 2xl:leading-[90px] 2xl:py-3
-            xl:text-[48px] xl:leading-[72px] 
-            md:text-[32px] md:leading-[44px]
-            sm:text-[30px] sm:leading-[40px]
-            text-[24px] leading-[36px] py-2
-            dark:text-[#fff] text-secondary font-extrabold"
-            >
-              Hasan Rifat
-            </h2>
             <h5
               className="
-            xl:text-[32px] xl:leading-[48px]
-            md:text-[20px] md:leading-[32px]
-            sm:text-[18px] sm:leading-[28px]
-            text-[16px] leading-[22px]
+           
+            text-base
             dark:text-[#fff] text-[#212428] font-semibold"
             >
-              Full Stack web developer
+              <span className="">Hello I&apos;M</span> Hasan Rifat
             </h5>
+            <h2
+              className="
+            xl:text-4xl
+            md:text-[32px] md:leading-[44px]
+            sm:text-[30px] sm:leading-[40px]
+            text-[24px] leading-[36px] 
+            dark:text-[#fff] text-secondary font-extrabold"
+            >
+              <span className="dark:text-primary"> MERN Stack</span> Developer
+            </h2>
+
             <p
               className="dark:text-[#e2e8f0] text-[#212428]
-            lg:text-[20px] lg:leading-[30px] lg:mb-[30px] lg:mt-[18px]
-            md:text-[18px] md:leading-[28px] md:mb-[20px] md:mt-[10px]
-            sm:text-[16px] sm:leading-[24px] mb-[10px] mt-[5px]
-            text-[14px] leading-[20px] 
+            lg:text-[20px] leading-[26px] sm:leading-8 
+            md:text-[18px] 
+            sm:text-[16px]  py-[20px] sm:pt-[20px] sm:pb-[25px]
+            text-[14px] 
             "
             >
               I m a self-learner person. I am constantly gaining new skills in{" "}
               web development. By which I can give some good benefit to your
               Team. Besides, I am a hard-working and creative person
             </p>
-            <div className="grid grid-cols-2 2xl:grid-cols-3 items-center gap-6">
-              <div className=" flex items-center gap-4 w-full col-span-2 2xl:col-span-2">
+            <div className="flex flex-wrap items-center gap-6">
+              <div className=" flex items-center gap-4  ">
                 <button className="btn">About me</button>
-                <strong
-                  className=" 
-              lg:text-[22px] lg:leading-[24px] 
-              md:text-[18px] md:leading-[20px] 
-              sm:text-[16px] sm:leading-[18px] 
-              text-[14px] leading-[16px] 
-              "
-                >
-                  Follow me:
-                </strong>
               </div>
-              <div className="flex gap-2 w-full ml-3 col-span-2 2xl:col-span-1">
+              <div className="flex gap-2  sm:ml-3 ">
                 <Link
                   target="_blank"
                   href="https://www.linkedin.com/in/dev-hasan-rifat/"
@@ -87,7 +72,7 @@ const Hero: React.FC<HeroProps> = () => {
                 hover:bg-primary hover:text-[#fff] text-xl
                 "
                 >
-                  <FaLinkedinIn />
+                  <FaLinkedinIn className="text-sm md:text-[20px]" />
                 </Link>
                 <Link
                   target="_blank"
@@ -97,7 +82,7 @@ const Hero: React.FC<HeroProps> = () => {
                 hover:bg-primary hover:text-[#fff] text-xl
                 "
                 >
-                  <AiFillTwitterCircle />
+                  <AiFillTwitterCircle className="text-sm md:text-[20px]" />
                 </Link>
                 <Link
                   target="_blank"
@@ -107,7 +92,7 @@ const Hero: React.FC<HeroProps> = () => {
                 hover:bg-primary hover:text-[#fff] text-xl
                 "
                 >
-                  <BsFacebook />
+                  <BsFacebook className="text-sm md:text-[20px]" />
                 </Link>
               </div>
             </div>
