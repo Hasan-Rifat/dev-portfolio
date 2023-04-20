@@ -49,11 +49,12 @@ const Services: React.FC<ServicesProps> = () => {
   ];
   return (
     <section
+      id="services"
       className="py-[100px] dark:bg-[#212428] bg-[#ebf1f6]" //
     >
       <div className="xl:container mx-auto px-[5%] py-[0.5%]">
-        <div className="lg:flex lg:items-center lg:gap-[118px]">
-          <div className="">
+        <div className="md:flex lg:items-center justify-between lg:gap-[118px] ">
+          <div className="w-full">
             <h5
               className="text-left font-semibold text-primary 
             text-base leading-9 capitalize"
@@ -62,22 +63,16 @@ const Services: React.FC<ServicesProps> = () => {
             </h5>
             <h3
               className="
-           
-              text-left
-            2xl:text-5xl 2xl:leading-[58px]
-            xl:text-4xl xl:leading-[48px]
-            lg:text-3xl lg:leading-[38px]
-            md:text-2xl md:leading-[28px]
-            sm:text-xl sm:leading-[18px]
-            text-lg leading-[18px]
-            font-bold
-            text-secondary dark:text-[#fff] capitalize
-            "
+            xl:text-4xl
+            md:text-[32px] md:leading-[44px]
+            sm:text-[30px] sm:leading-[40px]
+            text-[24px] leading-[36px] 
+            dark:text-[#fff] text-secondary font-extrabold"
             >
-              What i do
+              <span className="dark:text-primary"> What I</span> Do
             </h3>
           </div>
-          <div className="mt-4 md:mt-0">
+          <div className="mt-4 md:mt-0 w-full">
             <p className="text-left lg:max-w-[472px] w-full">
               Promote your blog posts, case udie, and product ouncems with the
               the branded videoscustomers coming back for services Makes best

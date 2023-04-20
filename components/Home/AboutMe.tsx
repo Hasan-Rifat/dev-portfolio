@@ -19,6 +19,7 @@ const AboutMe: React.FC<AboutMeProps> = () => {
   ];
   return (
     <section
+      id="about"
       className="py-[400px] h-screen flex items-center  border-b-[1px] dark:border-accent border-[#0000] dark:bg-success"
       //bg-[#ebf1f6]
     >
@@ -82,7 +83,7 @@ const AboutMe: React.FC<AboutMeProps> = () => {
               </p>
             </div>
           </div>
-          <div className="p-20 relative">
+          <div className="p-20 relative mb-5 sm:mb-0">
             <Image
               src={img}
               alt="about me image"

@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 
-import heroLeftImg from "../../images/aboutme.png";
-import { useTheme } from "next-themes";
+import heroLeftImg from "../../images/aboutme.svg";
 import Image from "next/image";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -14,24 +13,34 @@ type HeroProps = {};
 const Hero: React.FC<HeroProps> = () => {
   return (
     <section
+      id="home"
       className={`h-screen flex items-center  border-b-[1px] dark:border-accent border-[#0000] dark:bg-[#212428] bg-[#ebf1f6] overflow-hidden`}
       //bg-[#dde5ef]
     >
       <div className="xl:container mx-auto px-[5%] py-[0.5%] ">
-        <div className="md:grid md:grid-cols-8 gap-5 xl:gap-10 2xl:gap-20 md:items-center">
-          <div className="md:col-span-4  dark:bg-[#181a1d] bg-[#fff] p-16 rounded-xl shadow-xl">
-            <Image src={heroLeftImg} alt="hero image" />
+        <div className="md:grid md:grid-cols-8 gap-10 xl:gap-10 2xl:gap-20 md:items-center">
+          <div className="md:col-span-4  dark:bg-[#181a1d]  bg-[#fff] p-16 rounded-xl shadow-xl">
+            {/* <Image src={heroLeftImg} alt="hero image" /> */}
+            <div className="p-3 relative w-full h-full">
+              <Image
+                src={heroLeftImg}
+                alt="about me image"
+                className=" dark:bg-[#181a1d] bg-[#fff]   rounded-xl "
+                layout="responsive"
+              />
+            </div>
           </div>
           <div
             className="
           md:col-span-4 
-          md:mt-0 mt-10
+          md:mt-0 mt-10 
           "
           >
             <h5
               className="
            
-            text-base
+            md:text-base
+            text-sm
             dark:text-[#fff] text-[#212428] font-semibold"
             >
               <span className="">Hello I&apos;M</span> Hasan Rifat
@@ -39,9 +48,9 @@ const Hero: React.FC<HeroProps> = () => {
             <h2
               className="
             xl:text-4xl
-            md:text-[32px] md:leading-[44px]
-            sm:text-[30px] sm:leading-[40px]
-            text-[24px] leading-[36px] 
+            lg:text-[32px] lg:leading-[44px]
+            md:text-[24px] md:leading-[40px]
+            text-[22px] leading-[36px] 
             dark:text-[#fff] text-secondary font-extrabold"
             >
               <span className="dark:text-primary"> MERN Stack</span> Developer

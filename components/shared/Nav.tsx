@@ -16,7 +16,7 @@ const Nav: React.FC<NavProps> = () => {
   const menu = [
     {
       name: "Home",
-      path: "/",
+      path: "/home",
       id: 1,
     },
     {
@@ -24,25 +24,26 @@ const Nav: React.FC<NavProps> = () => {
       path: "/about",
       id: 2,
     },
+
     {
       name: "Services",
-      path: "/services",
+      path: "#services",
       id: 3,
     },
     {
-      name: "Work",
-      path: "/experience",
+      name: "Skills",
+      path: "/skills",
       id: 4,
     },
     {
-      name: "experience",
-      path: "/experience",
-      id: 6,
+      name: "Portfolio",
+      path: "/portfolio",
+      id: 5,
     },
     {
-      name: "contact",
+      name: "Contact",
       path: "/contact",
-      id: 5,
+      id: 6,
     },
   ];
   const toggleTheme = () => {
@@ -72,7 +73,7 @@ const Nav: React.FC<NavProps> = () => {
             : ""
         }`}
       >
-        <div className="container mx-auto px-[5%] py-[2.5%] sm:py-[0.5%]">
+        <div className="xl:container mx-auto px-[5%] py-[2.5%] sm:py-[0.5%]">
           <div className="grid grid-cols-4 items-center">
             <div className="col-span-2 md:col-span-1">
               <h2>
@@ -117,7 +118,7 @@ const Nav: React.FC<NavProps> = () => {
                 {menu.map((item) => (
                   <Link className=" block mx-5" href={item.path} key={item.id}>
                     <li
-                      className="group relative text-xs 2xl:text-xl  dark:hover:text-primary hover:text-primary font-bold  inline-block
+                      className="group relative text-xs 2xl:text-base  dark:hover:text-primary hover:text-primary font-bold  inline-block
                     "
                     >
                       <span> {item.name}</span>

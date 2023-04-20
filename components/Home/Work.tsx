@@ -1913,18 +1913,18 @@ const Work: React.FC<WorkProps> = () => {
   let count = open ? works.length : 6;
 
   return (
-    <section className="py-[100px] dark:bg-[#212428] ">
+    <section className="py-[100px] dark:bg-[#212428] bg-[#ebf1f6]">
       <div className="lg:container mx-auto px-[5%] py-[0.5%] relative">
         {/* portfolio catagories */}
-        <div className="text-center sm:text-left sm:flex sm:flex-wrap justify-center mb-10 max-w-[100%] mx-auto dark:bg-[#181a1d] bg-[#ebf1f6] shadow-xl rounded-md ">
+        <div className="text-center sm:text-left sm:flex sm:flex-wrap justify-center mb-10 max-w-[100%] mx-auto dark:bg-[#181a1d] bg-[#fff]  shadow-xl rounded-md py-5">
           {theme === "dark" && (
             <>
-              <div className="absolute -top-7 right-0 xl:-right-10 h-[232px] w-[232px] rounded-[50%] opacity-50 blur-[115px] bg-[#7f11e0] z-10"></div>
-              <div className="absolute bottom-0 -left-2 xl:-left-10 h-[232px] w-[232px] rounded-[50%] opacity-50 blur-[115px] bg-[#ff5832] z-10"></div>
+              <div className="absolute -top-7 right-0 2xl:-right-10 h-[232px] w-[232px] rounded-[50%] opacity-50 blur-[115px] bg-[#7f11e0] z-10"></div>
+              <div className="absolute bottom-0 -left-2 2xl:-left-10 h-[232px] w-[232px] rounded-[50%] opacity-50 blur-[115px] bg-[#ff5832] z-10"></div>
             </>
           )}
           {unique.map((item) => (
-            <div className=" py-3 px-2" key={item}>
+            <div className=" py-1 px-3" key={item}>
               <button
                 onClick={() => setSearch(item)}
                 className={
@@ -1944,7 +1944,7 @@ const Work: React.FC<WorkProps> = () => {
           ))}
         </div>
         {/* portfolios */}
-        <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-8">
           {works
             .filter((item) => {
               if (search === "all") {
@@ -1961,7 +1961,7 @@ const Work: React.FC<WorkProps> = () => {
             .map((item) => (
               <div
                 key={item.id}
-                className={`dark:bg-[#212430] dark:text-[#fff] overflow-hidden group grid h-full w-full items-center rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[5px] rounded-br-[5px] shadow-lg shadow-indigo-500/40 dark:shadow-[0_0_50px_0_rgba(0,0,0,0.5)]
+                className={`dark:bg-[#212430] bg-[#fff] dark:text-[#fff] overflow-hidden group grid h-full w-full items-center rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[5px] rounded-br-[5px] shadow-lg shadow-indigo-500/40 dark:shadow-[0_0_50px_0_rgba(0,0,0,0.5)]
             hover:translate-y-[-10px] transition duration-500
             z-[99]
             `}
