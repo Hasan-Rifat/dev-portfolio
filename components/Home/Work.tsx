@@ -1033,6 +1033,7 @@ const Work: React.FC<WorkProps> = () => {
       img: one,
     },
     ,
+    ,
     /*  {
       id: 2,
       url: "https://book-store-application.vercel.app/",
@@ -1063,7 +1064,8 @@ const Work: React.FC<WorkProps> = () => {
         "Reviews and ratings: The application can allow customers to leave reviews and ratings for books they have purchased, which can help other customers make informed decisions about their purchases.",
         "Social media integration: The application can integrate with social media platforms, allowing customers to share their purchases and reviews on social media, which can help increase brand awareness and drive traffic to the application.",
       ],
-    } */ {
+    } */
+    /*  {
       id: 3,
       url: "https://product-cart-appication.vercel.app/",
       title: "Product",
@@ -1088,7 +1090,7 @@ const Work: React.FC<WorkProps> = () => {
         "Shipping and delivery options: The ability for users to choose their preferred shipping and delivery options, such as standard shipping, express shipping, or local pickup.",
       ],
       img: two,
-    },
+    } */
     {
       id: 4,
       url: "https://real-estate-hr.vercel.app/",
@@ -1143,7 +1145,8 @@ const Work: React.FC<WorkProps> = () => {
       ],
       img: three,
     },
-    {
+    ,
+    /*  {
       id: 5,
       url: "https://flight-booking-application-hr.vercel.app/",
       title: "Flight Booking",
@@ -1169,8 +1172,7 @@ const Work: React.FC<WorkProps> = () => {
         "User Account Management: The ability for users to create and manage their user accounts, including saving past and upcoming bookings, tracking flight searches and alerts, and receiving notifications about promotions and deals.",
       ],
       img: four,
-    },
-    {
+    } */ {
       id: 6,
       url: "https://banking-website.vercel.app/",
       title: "banking website",
@@ -1195,7 +1197,8 @@ const Work: React.FC<WorkProps> = () => {
       ],
       img: five,
     },
-    {
+    ,
+    /*  {
       id: 7,
       url: "https://jobbox-client-hr.vercel.app/",
       title: "Job Box",
@@ -1229,8 +1232,7 @@ const Work: React.FC<WorkProps> = () => {
       serverCode: "https://github.com/Hasan-Rifat/jobbox-server",
       update: true,
       img: six,
-    },
-    {
+    } */ {
       id: 8,
       url: "https://react-landing-page-ruby.vercel.app/",
       title: "Landing Page",
@@ -1350,7 +1352,12 @@ const Work: React.FC<WorkProps> = () => {
       ],
       img: nine,
     },
-    {
+    ,
+    ,
+    ,
+    ,
+    ,
+    /* {
       id: 11,
       url: "https://javascript-bank-list.vercel.app/",
       title: "Bank List",
@@ -1374,8 +1381,8 @@ const Work: React.FC<WorkProps> = () => {
       ],
       update: false,
       img: ten,
-    },
-    {
+    } */
+    /*  {
       id: 12,
       url: "https://javascript-pig-game-tawny.vercel.app/",
       title: "Javascript Pig game",
@@ -1398,8 +1405,8 @@ const Work: React.FC<WorkProps> = () => {
         "Mobile Compatibility: The ability to play the game on mobile devices, including smartphones and tablets, to allow for greater flexibility and convenience.",
       ],
       img: eleven,
-    },
-    {
+    } */
+    /*  {
       id: 13,
       url: "https://javascript-modal-snowy.vercel.app/",
       title: "Javascript Modal",
@@ -1423,8 +1430,8 @@ const Work: React.FC<WorkProps> = () => {
         "Cross-Browser Compatibility: The modal should work across different browsers, including Chrome, Firefox, Safari, and Internet Explorer, to ensure a consistent user experience for all users.",
       ],
       img: twelve,
-    },
-    {
+    } */
+    /*   {
       id: 14,
       url: "https://guess-my-number-game-ten.vercel.app/",
       title: "Javascript Game Gush my number",
@@ -1448,8 +1455,8 @@ const Work: React.FC<WorkProps> = () => {
         "Mobile Compatibility: The ability to play the game on mobile devices, including smartphones and tablets, to allow for greater flexibility and convenience.",
       ],
       img: thirteen,
-    },
-    {
+    } */
+    /*    {
       id: 15,
       url: "https://landinge-page-ins.vercel.app/",
       title: "Simple Landing page",
@@ -1474,8 +1481,7 @@ const Work: React.FC<WorkProps> = () => {
         "Social Media Integration: Links to social media profiles and sharing buttons that allow visitors to easily share the page on their own social media accounts.",
       ],
       img: fourteen,
-    },
-    {
+    } */ {
       id: 16,
       url: "https://creative-agancy.vercel.app/",
       title: "creative agency",
@@ -1612,7 +1618,8 @@ const Work: React.FC<WorkProps> = () => {
       ],
       img: nineteen,
     },
-    {
+    ,
+    /*  {
       id: 21,
       url: "https://money-master-five-green.vercel.app/",
       title: "phone hunter",
@@ -1632,8 +1639,7 @@ const Work: React.FC<WorkProps> = () => {
       ],
       update: false,
       img: twenty,
-    },
-    {
+    } */ {
       id: 22,
       url: "https://convention-center-seven.vercel.app/",
       title: "convention center",
@@ -1792,7 +1798,8 @@ const Work: React.FC<WorkProps> = () => {
       ],
       img: twentySix,
     },
-    {
+    ,
+    /* {
       id: 28,
       url: "https://bank-blue-three.vercel.app/",
       title: "Bank",
@@ -1812,8 +1819,7 @@ const Work: React.FC<WorkProps> = () => {
         "Mobile-friendly: The website appears to be mobile-friendly, allowing users to access the website on their smartphones or tablets.",
       ],
       img: twentySeven,
-    },
-    {
+    } */ {
       id: 29,
       url: "https://kopa-samsu.vercel.app/",
       title: "kopa-samsu",
@@ -1879,7 +1885,8 @@ const Work: React.FC<WorkProps> = () => {
       ],
       img: thirty,
     },
-    {
+    ,
+    /*  {
       id: 33,
       url: "https://hasan-rifat.github.io/leader-bord/",
       title: "Leader board",
@@ -1899,8 +1906,7 @@ const Work: React.FC<WorkProps> = () => {
         "Mobile-friendly: The website appears to be mobile-friendly, allowing users to access the website on their smartphones or tablets.",
       ],
       img: thirtyOne,
-    },
-    {
+    } */ {
       id: 34,
       url: "https://e-school-five.vercel.app/",
       title: "E School",
@@ -1970,6 +1976,7 @@ const Work: React.FC<WorkProps> = () => {
       img: thirtyFour,
     },
   ];
+
   const [search, setSearch] = useState<string>("all");
   const [open, setOpen] = useState<boolean>(false);
   const { theme } = useTheme();
@@ -1979,7 +1986,7 @@ const Work: React.FC<WorkProps> = () => {
   );
   const allCategory: any = new Set(data.flat());
   const unique = ["all", ...allCategory].sort();
-  let count = open ? works.length : 6;
+  let count = open ? works.length : 8;
 
   return (
     <section className="py-[100px] dark:bg-[#212428] bg-[#ebf1f6]">
@@ -2004,16 +2011,11 @@ const Work: React.FC<WorkProps> = () => {
             <div className=" py-1 px-3 z-50" key={item}>
               <button
                 onClick={() => setSearch(item)}
-                className={
-                  ` text-sm px-4 py-1 capitalize font-bold 
+                className={` text-sm px-4 py-1 capitalize font-bold 
          rounded-lg
          ${item === search && " bg-primary text-[#fff]"}
          ${item !== search && " dark:text-[#fff] text-[#1f1f1f]"}
-        `
-                  /*  ${item.length % 2 === 0 && "bg-[#ddf7e3]"}
-                ${item.length % 2 !== 0 && "bg-[#f6f7c1]"}
-                ${item.length % 3 !== 0 && "bg-[#ffd4d4] "} */
-                }
+        `}
               >
                 {item}
               </button>
@@ -2021,7 +2023,7 @@ const Work: React.FC<WorkProps> = () => {
           ))}
         </div>
         {/* portfolios */}
-        <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-8">
           {works
             .filter((item) => {
               if (search === "all") {
@@ -2038,34 +2040,31 @@ const Work: React.FC<WorkProps> = () => {
             .map((item) => (
               <div
                 key={item?.id}
-                className={`dark:bg-[#fff] bg-[#fff] dark:text-[#fff] overflow-hidden group grid h-full w-full items-center rounded-tl-[8px] rounded-tr-[8px]  shadow-lg shadow-indigo-500/40 dark:shadow-[0_0_50px_0_rgba(0,0,0,0.5)]
-            hover:translate-y-[-10px] transition duration-500
-            z-[99]
-            `}
+                className={`dark:bg-[#fff] bg-[#fff] dark:text-[#fff] overflow-hidden group grid h-full w-full items-center  shadow-lg shadow-indigo-500/40 dark:shadow-[0_0_50px_0_rgba(0,0,0,0.5)] relative
+          hover:translate-y-[-10px] transition duration-500 
+          z-[99] rounded-tl-[8px] rounded-tr-[8px]
+          `}
               >
-                <div
-                  style={{ width: "100%", height: "210px" }}
-                  className=" relative p-5"
-                >
+                <div style={{ width: "100%", height: "230px" }}>
                   <Image
                     src={item?.img}
                     // layout="fill"
-                    layout="responsive"
-                    objectFit="cover"
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      bottom: 0,
-                      left: 0,
-                      right: 0,
-                    }}
-                    className="rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[5px] rounded-br-[5px] h-fit"
+                    /* layout="responsive"
+                  objectFit="cover" */
+                    /*  style={{
+                    position: "absolute",
+                    top: 0,
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                  }} */
+                    className="rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[5px] rounded-br-[5px] "
                     alt="portfolio"
                   />
                 </div>
 
-                <div className="p-6 flex justify-between items-center gap-1 relative z-10 bg-[#212430] rounded-bl-[5px] rounded-br-[5px]">
-                  <h3 className="text-base font-semibold text-[#fff] ">
+                <div className="relative p-6 flex justify-between items-center gap-1 w-full z-10 bg-[#212430]                   rounded-bl-[5px] rounded-br-[5px]">
+                  <h3 className="text-xs font-semibold text-[#fff] ">
                     {item?.title}
                   </h3>
                   <Link
