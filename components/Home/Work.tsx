@@ -2047,17 +2047,7 @@ const Work: React.FC<WorkProps> = () => {
               >
                 <div style={{ width: "100%", height: "250px" }}>
                   <Image
-                    src={item?.img}
-                    // layout="fill"
-                    /* layout="responsive"
-                  objectFit="cover" */
-                    /*  style={{
-                    position: "absolute",
-                    top: 0,
-                    bottom: 0,
-                    left: 0,
-                    right: 0,
-                  }} */
+                    src={item?.img ?? ""}
                     className="rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[5px] rounded-br-[5px] "
                     alt="portfolio"
                   />
