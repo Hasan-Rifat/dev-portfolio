@@ -1916,15 +1916,15 @@ const Work: React.FC<WorkProps> = () => {
     <section className="py-[100px] dark:bg-[#212428] bg-[#ebf1f6]">
       <div className="lg:container mx-auto px-[5%] py-[0.5%] relative">
         {/* portfolio catagories */}
-        <div className="text-center sm:text-left sm:flex sm:flex-wrap justify-center mb-10 max-w-[100%] mx-auto dark:bg-[#181a1d] bg-[#fff]  shadow-xl rounded-md py-5">
+        <div className="text-center sm:text-left sm:flex sm:flex-wrap justify-center mb-10 max-w-[100%] mx-auto dark:bg-[#181a1d] bg-[#fff]  shadow-xl rounded-md py-5   ">
           {theme === "dark" && (
-            <>
-              <div className="absolute -top-7 right-0 2xl:-right-10 h-[232px] w-[232px] rounded-[50%] opacity-50 blur-[115px] bg-[#7f11e0] z-10"></div>
+            <div>
+              <div className="absolute top-0 right-0 2xl:-right-10 h-[232px] w-[232px] rounded-[50%] opacity-50 blur-[115px] bg-[#7f11e0] z-10"></div>
               <div className="absolute bottom-0 -left-2 2xl:-left-10 h-[232px] w-[232px] rounded-[50%] opacity-50 blur-[115px] bg-[#ff5832] z-10"></div>
-            </>
+            </div>
           )}
           {unique.map((item) => (
-            <div className=" py-1 px-3" key={item}>
+            <div className=" py-1 px-3 z-50" key={item}>
               <button
                 onClick={() => setSearch(item)}
                 className={
