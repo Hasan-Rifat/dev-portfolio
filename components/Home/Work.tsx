@@ -2040,21 +2040,21 @@ const Work: React.FC<WorkProps> = () => {
             .map((item) => (
               <div
                 key={item?.id}
-                className={`dark:bg-[#fff] bg-[#fff] dark:text-[#fff] overflow-hidden group grid h-full w-full items-center  shadow-lg shadow-indigo-500/40 dark:shadow-[0_0_50px_0_rgba(0,0,0,0.5)] relative
+                className={`dark:bg-[#21242f]  dark:text-[#fff] overflow-hidden group grid h-full w-full items-center  shadow-lg shadow-indigo-500/40 dark:shadow-[0_0_50px_0_rgba(0,0,0,0.5)] relative
           hover:translate-y-[-10px] transition duration-500 
-          z-[99] rounded-tl-[8px] rounded-tr-[8px]
+          z-[99] rounded-tl-[8px] rounded-tr-[8px] 
           `}
               >
-                <div style={{ width: "100%", height: "250px" }}>
+                <div style={{ width: "100%", height: "260px" }}>
                   <Image
                     src={item?.img ?? ""}
-                    className="rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[5px] rounded-br-[5px] "
+                    className="rounded-xl"
                     alt="portfolio"
                   />
                 </div>
 
-                <div className="relative p-6 flex justify-between items-center gap-1 w-full z-10 bg-[#212430]                   rounded-bl-[5px] rounded-br-[5px]">
-                  <h3 className="text-xs font-semibold text-[#fff] ">
+                <div className="relative p-6 flex justify-between items-center gap-1 w-full z-10 bg-[#212430] ">
+                  <h3 className="text-xs font-semibold text-[#fff] rounded-bl-[8px] rounded-br-[8px]">
                     {item?.title}
                   </h3>
                   <Link
