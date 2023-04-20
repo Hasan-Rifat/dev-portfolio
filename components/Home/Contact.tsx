@@ -6,7 +6,7 @@ type ContactProps = {};
 
 const Contact: React.FC<ContactProps> = () => {
   return (
-    <section className="h-screen flex items-center mt-[200px] md:mt-0">
+    <section className="h-screen flex items-center mt-[200px] md:mt-0 md:mb-0">
       <div className="xl:container mx-auto px-[5%] py-[0.5%]">
         <div className="mt-[200px] md:mt-0">
           <div className="p-16 dark:bg-[#0f1117]  bg-[#fff] grid grid-cols-1 lg:grid-cols-2 items-center  rounded-lg shadow-[0_0_50px_0_rgba(0,0,0,0.1)]">
@@ -95,7 +95,7 @@ const Contact: React.FC<ContactProps> = () => {
                     <textarea
                       rows={10}
                       className="appearance-none bg-transparent border-b border-red-500 w-full  mr-3 p-4 focus:bg-gray-200 leading-tight focus:outline-none dark:bg-[#181a1d] bg-[#f5f7f4] dark:placeholder-[#fff] placeholder-[#121212]"
-                      type={"text"}
+                      // type={"text"}
                       placeholder="your message"
                     />
                   </div>
