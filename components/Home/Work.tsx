@@ -7,6 +7,41 @@ import Model from "../shared/Model";
 import { useTheme } from "next-themes";
 import dynamic from "next/dynamic";
 
+import one from "../../images/portfolio/1.png";
+import two from "../../images/portfolio/2.png";
+import three from "../../images/portfolio/3.png";
+import four from "../../images/portfolio/4.png";
+import five from "../../images/portfolio/5.png";
+import six from "../../images/portfolio/6.png";
+import seven from "../../images/portfolio/7.png";
+import eight from "../../images/portfolio/8.png";
+import nine from "../../images/portfolio/9.png";
+import ten from "../../images/portfolio/10.png";
+import eleven from "../../images/portfolio/11.png";
+import twelve from "../../images/portfolio/12.png";
+import thirteen from "../../images/portfolio/13.png";
+import fourteen from "../../images/portfolio/14.png";
+import fifteen from "../../images/portfolio/15.png";
+import sixteen from "../../images/portfolio/16.png";
+import seventeen from "../../images/portfolio/17.png";
+import eighteen from "../../images/portfolio/18.png";
+import nineteen from "../../images/portfolio/19.png";
+import twenty from "../../images/portfolio/20.png";
+import twentyOne from "../../images/portfolio/21.png";
+import twentyTwo from "../../images/portfolio/22.png";
+import twentyThree from "../../images/portfolio/23.png";
+import twentyFour from "../../images/portfolio/24.png";
+import twentyFive from "../../images/portfolio/25.png";
+import twentySix from "../../images/portfolio/26.png";
+import twentySeven from "../../images/portfolio/27.png";
+import twentyEight from "../../images/portfolio/28.png";
+import twentyNine from "../../images/portfolio/29.png";
+import thirty from "../../images/portfolio/30.png";
+import thirtyOne from "../../images/portfolio/31.png";
+import thirtyTwo from "../../images/portfolio/32.png";
+import thirtyThree from "../../images/portfolio/33.png";
+import thirtyFour from "../../images/portfolio/34.png";
+
 type WorkProps = {};
 
 const Work: React.FC<WorkProps> = () => {
@@ -995,8 +1030,10 @@ const Work: React.FC<WorkProps> = () => {
         "Social media integration: The website should have social media integration, allowing customers to share products they like on social media platforms, which can help increase brand awareness and drive traffic to the website.",
       ],
       update: false,
+      img: one,
     },
-    {
+    ,
+    /*  {
       id: 2,
       url: "https://book-store-application.vercel.app/",
       title: "Book List",
@@ -1026,8 +1063,7 @@ const Work: React.FC<WorkProps> = () => {
         "Reviews and ratings: The application can allow customers to leave reviews and ratings for books they have purchased, which can help other customers make informed decisions about their purchases.",
         "Social media integration: The application can integrate with social media platforms, allowing customers to share their purchases and reviews on social media, which can help increase brand awareness and drive traffic to the application.",
       ],
-    },
-    {
+    } */ {
       id: 3,
       url: "https://product-cart-appication.vercel.app/",
       title: "Product",
@@ -1051,6 +1087,7 @@ const Work: React.FC<WorkProps> = () => {
         "Discounts and coupons: A feature that allows users to apply discounts and coupons to their purchases.",
         "Shipping and delivery options: The ability for users to choose their preferred shipping and delivery options, such as standard shipping, express shipping, or local pickup.",
       ],
+      img: two,
     },
     {
       id: 4,
@@ -1104,6 +1141,7 @@ const Work: React.FC<WorkProps> = () => {
         "Schedule Viewings: A feature that allows users to schedule property viewings with agents or brokers.",
         "User Account Management: The ability for users to create and manage their user accounts, including saving favorite properties, tracking property views and searches, and receiving notifications about new listings.",
       ],
+      img: three,
     },
     {
       id: 5,
@@ -1130,6 +1168,7 @@ const Work: React.FC<WorkProps> = () => {
         "Car Rental and Hotel Booking: Integration with car rental and hotel booking services to allow users to book their entire travel itinerary in one place.",
         "User Account Management: The ability for users to create and manage their user accounts, including saving past and upcoming bookings, tracking flight searches and alerts, and receiving notifications about promotions and deals.",
       ],
+      img: four,
     },
     {
       id: 6,
@@ -1154,6 +1193,7 @@ const Work: React.FC<WorkProps> = () => {
         "Loans: Integration with loan services to allow customers to apply for and manage their loans.",
         "Investment Services: Integration with investment services to allow customers to invest in stocks, mutual funds, or other financial products.",
       ],
+      img: five,
     },
     {
       id: 7,
@@ -1188,6 +1228,7 @@ const Work: React.FC<WorkProps> = () => {
       ],
       serverCode: "https://github.com/Hasan-Rifat/jobbox-server",
       update: true,
+      img: six,
     },
     {
       id: 8,
@@ -1226,6 +1267,7 @@ const Work: React.FC<WorkProps> = () => {
         "Images and Videos: High-quality images and videos that showcase the product or service being offered and help tell the brand's story.",
         "Analytics: Integration with analytics tools to track user behavior and monitor the effectiveness of the landing page.",
       ],
+      img: seven,
     },
     {
       id: 9,
@@ -1268,6 +1310,7 @@ const Work: React.FC<WorkProps> = () => {
         "User Account Management: The ability for users to create and manage their user accounts, including saving their shipping and billing information, viewing their order history, and receiving notifications about their orders.",
         "Customer Support: Access to customer support services, such as live chat, email, or phone support, to help users with any questions or issues they may have while using the website.",
       ],
+      img: eight,
     },
     {
       id: 10,
@@ -1305,6 +1348,7 @@ const Work: React.FC<WorkProps> = () => {
         "Mobile Compatibility: The ability to access the warehouse management application on mobile devices, including smartphones and tablets, to allow for greater flexibility and convenience.",
         "Integration with Other Systems: Integration with other systems such as accounting software or e-commerce platforms to streamline workflows and improve efficiency.",
       ],
+      img: nine,
     },
     {
       id: 11,
@@ -1329,6 +1373,7 @@ const Work: React.FC<WorkProps> = () => {
         "Security Features: Measures in place to ensure the security and privacy of users' information, such as SSL encryption, two-factor authentication, and compliance with data protection regulations.",
       ],
       update: false,
+      img: ten,
     },
     {
       id: 12,
@@ -1352,6 +1397,7 @@ const Work: React.FC<WorkProps> = () => {
         "Sound Effects: Sound effects that add excitement and engagement to the game, such as the sound of dice rolling or applause when a player wins.",
         "Mobile Compatibility: The ability to play the game on mobile devices, including smartphones and tablets, to allow for greater flexibility and convenience.",
       ],
+      img: eleven,
     },
     {
       id: 13,
@@ -1376,6 +1422,7 @@ const Work: React.FC<WorkProps> = () => {
         "Mobile Compatibility: The ability to use the modal on mobile devices, including smartphones and tablets, to allow for greater flexibility and convenience.",
         "Cross-Browser Compatibility: The modal should work across different browsers, including Chrome, Firefox, Safari, and Internet Explorer, to ensure a consistent user experience for all users.",
       ],
+      img: twelve,
     },
     {
       id: 14,
@@ -1400,6 +1447,7 @@ const Work: React.FC<WorkProps> = () => {
         "Sound Effects: Sound effects that add excitement and engagement to the game, such as the sound of a correct or incorrect guess.",
         "Mobile Compatibility: The ability to play the game on mobile devices, including smartphones and tablets, to allow for greater flexibility and convenience.",
       ],
+      img: thirteen,
     },
     {
       id: 15,
@@ -1425,6 +1473,7 @@ const Work: React.FC<WorkProps> = () => {
         "Contact Information: A way for visitors to contact the company, such as a contact form, phone number, or email address, that adds legitimacy and trustworthiness.",
         "Social Media Integration: Links to social media profiles and sharing buttons that allow visitors to easily share the page on their own social media accounts.",
       ],
+      img: fourteen,
     },
     {
       id: 16,
@@ -1461,6 +1510,7 @@ const Work: React.FC<WorkProps> = () => {
         "Branding: Consistent branding throughout the site, including colors, typography, and logo, that creates a cohesive and memorable experience.",
         "Responsive Design: A design that is optimized for all screen sizes, including mobile and tablet devices, to ensure a seamless experience for all users.",
       ],
+      img: fifteen,
     },
     {
       id: 17,
@@ -1491,6 +1541,7 @@ const Work: React.FC<WorkProps> = () => {
         "Feedback system: The platform has a feedback system that enables clients to leave reviews for service providers, helping others to make informed decisions.",
         "Responsive support: The website provides responsive support to both service providers and clients, ensuring any issues are quickly resolved.",
       ],
+      img: sixteen,
     },
     {
       id: 18,
@@ -1516,6 +1567,7 @@ const Work: React.FC<WorkProps> = () => {
         "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle.",
         "The greatest glory in living lies not in never falling, but in rising every time we fall.",
       ],
+      img: seventeen,
     },
     {
       id: 19,
@@ -1536,6 +1588,7 @@ const Work: React.FC<WorkProps> = () => {
         "User-friendly interface: The website has a clean and user-friendly interface, making it easy for customers to navigate and find the products they are looking for.",
         "Responsive customer support: The website provides responsive customer support, allowing customers to reach out for assistance with their purchases or any other inquiries they may have.",
       ],
+      img: eighteen,
     },
     {
       id: 20,
@@ -1557,6 +1610,7 @@ const Work: React.FC<WorkProps> = () => {
         "Free to use: The website is free to use, making it accessible to anyone who needs to check mobile phone specifications.",
         "No registration required: The website does not require users to register or create an account, allowing them to quickly find the information they need without any additional steps.",
       ],
+      img: nineteen,
     },
     {
       id: 21,
@@ -1577,6 +1631,7 @@ const Work: React.FC<WorkProps> = () => {
         "Free to use: The website is free to use, making it accessible to anyone who wants to learn more about personal finance.",
       ],
       update: false,
+      img: twenty,
     },
     {
       id: 22,
@@ -1598,6 +1653,7 @@ const Work: React.FC<WorkProps> = () => {
         "Contact information: The website provides contact information for the convention center, including phone and email, as well as a contact form for event inquiries.",
         "User-friendly interface: The website has a clean and user-friendly interface, making it easy for users to navigate and find the information they need.",
       ],
+      img: twentyOne,
     },
     {
       id: 23,
@@ -1629,6 +1685,7 @@ const Work: React.FC<WorkProps> = () => {
         "User-friendly interface: The website has a clean and user-friendly interface, making it easy for users to navigate and manage appointments and patient records.",
         "Mobile-friendly: The website appears to be mobile-friendly, allowing users to access the application on their smartphones or tablets.",
       ],
+      img: twentyTwo,
     },
     {
       id: 24,
@@ -1661,6 +1718,7 @@ const Work: React.FC<WorkProps> = () => {
         "Mobile-friendly: The website appears to be mobile-friendly, allowing users to access the application on their smartphones or tablets.",
         "Contact form: The website includes a contact form for users to send inquiries or feedback to the car service company.",
       ],
+      img: twentyThree,
     },
     {
       id: 25,
@@ -1688,6 +1746,7 @@ const Work: React.FC<WorkProps> = () => {
         "User reviews: The website includes user reviews and ratings for products, providing additional information for potential buyers.",
         "Mobile-friendly: The website appears to be mobile-friendly, allowing users to access the website on their smartphones or tablets.",
       ],
+      img: twentyFour,
     },
     {
       id: 26,
@@ -1709,6 +1768,7 @@ const Work: React.FC<WorkProps> = () => {
         "Mobile-friendly: The website appears to be mobile-friendly, allowing users to access the website on their smartphones or tablets.",
         "Contact form: The website includes a contact form for users to send inquiries or feedback to the website owner.",
       ],
+      img: twentyFive,
     },
     {
       id: 27,
@@ -1730,6 +1790,7 @@ const Work: React.FC<WorkProps> = () => {
         "User reviews: The website includes user reviews and ratings for products, providing additional information for potential buyers.",
         "Mobile-friendly: The website appears to be mobile-friendly, allowing users to access the website on their smartphones or tablets.",
       ],
+      img: twentySix,
     },
     {
       id: 28,
@@ -1750,6 +1811,7 @@ const Work: React.FC<WorkProps> = () => {
         "Contact information: The website includes contact information for customer support, including an email address and phone number.",
         "Mobile-friendly: The website appears to be mobile-friendly, allowing users to access the website on their smartphones or tablets.",
       ],
+      img: twentySeven,
     },
     {
       id: 29,
@@ -1770,6 +1832,7 @@ const Work: React.FC<WorkProps> = () => {
         "User reviews: The website includes user reviews and ratings for products, providing additional information for potential buyers.",
         "Mobile-friendly: The website appears to be mobile-friendly, allowing users to access the website on their smartphones or tablets.",
       ],
+      img: twentyEight,
     },
     {
       id: 30,
@@ -1792,6 +1855,7 @@ const Work: React.FC<WorkProps> = () => {
         "Mobile-friendly: The website appears to be mobile-friendly, allowing users to access the website on their smartphones or tablets.",
         "Contact information: The website includes contact information for customer support, including an email address and phone number.",
       ],
+      img: twentyNine,
     },
     {
       id: 32,
@@ -1813,6 +1877,7 @@ const Work: React.FC<WorkProps> = () => {
         "Mobile-friendly: The website appears to be mobile-friendly, allowing users to access the website on their smartphones or tablets.",
         "Contact information: The website includes contact information for customer support, including an email address and phone number.",
       ],
+      img: thirty,
     },
     {
       id: 33,
@@ -1833,6 +1898,7 @@ const Work: React.FC<WorkProps> = () => {
         "Simple and intuitive design: The website has a simple and intuitive design, with a clean and uncluttered interface.",
         "Mobile-friendly: The website appears to be mobile-friendly, allowing users to access the website on their smartphones or tablets.",
       ],
+      img: thirtyOne,
     },
     {
       id: 34,
@@ -1855,6 +1921,7 @@ const Work: React.FC<WorkProps> = () => {
         "Discussion forum: The website includes a discussion forum for each course, where users can ask questions, share ideas, and collaborate with other students.",
         "Mobile-friendly: The website appears to be mobile-friendly, allowing users to access the website on their smartphones or tablets.",
       ],
+      img: thirtyTwo,
     },
     {
       id: 35,
@@ -1878,6 +1945,7 @@ const Work: React.FC<WorkProps> = () => {
         "Shipping and delivery: The website provides users with information on shipping and delivery options, including estimated delivery times and shipping costs.",
         "Mobile-friendly: The website appears to be mobile-friendly, allowing users to access the website on their smartphones or tablets.",
       ],
+      img: thirtyThree,
     },
     {
       id: 36,
@@ -1899,6 +1967,7 @@ const Work: React.FC<WorkProps> = () => {
         "Contact page: The website includes a contact page with a contact form for users to get in touch with the website owner.",
         "Mobile-friendly: The website appears to be mobile-friendly, allowing users to access the website on their smartphones or tablets.",
       ],
+      img: thirtyFour,
     },
   ];
   const [search, setSearch] = useState<string>("all");
@@ -1906,7 +1975,7 @@ const Work: React.FC<WorkProps> = () => {
   const { theme } = useTheme();
 
   const data = works.map((work) =>
-    work.categories.map((item) => item.toLowerCase())
+    work?.categories.map((item) => item.toLowerCase())
   );
   const allCategory: any = new Set(data.flat());
   const unique = ["all", ...allCategory].sort();
@@ -1914,6 +1983,14 @@ const Work: React.FC<WorkProps> = () => {
 
   return (
     <section className="py-[100px] dark:bg-[#212428] bg-[#ebf1f6]">
+      {/*    <div className="grid grid-cols-3">
+        {works.map((item: any) => (
+          <div key={item.id}>
+            <h1>{item.title}</h1>
+            <Image height={200} src={item.img} alt={item.title} />
+          </div>
+        ))}
+      </div> */}
       <div className="lg:container mx-auto px-[5%] py-[0.5%] relative">
         {/* portfolio catagories */}
         <div className="text-center sm:text-left sm:flex sm:flex-wrap justify-center mb-10 max-w-[100%] mx-auto dark:bg-[#181a1d] bg-[#fff]  shadow-xl rounded-md py-5   ">
@@ -1950,7 +2027,7 @@ const Work: React.FC<WorkProps> = () => {
               if (search === "all") {
                 return item;
               } else if (
-                item.categories
+                item?.categories
                   .map((item) => item.toLowerCase())
                   .includes(search)
               ) {
@@ -1960,19 +2037,40 @@ const Work: React.FC<WorkProps> = () => {
             .slice(0, count)
             .map((item) => (
               <div
-                key={item.id}
-                className={`dark:bg-[#212430] bg-[#fff] dark:text-[#fff] overflow-hidden group grid h-full w-full items-center rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[5px] rounded-br-[5px] shadow-lg shadow-indigo-500/40 dark:shadow-[0_0_50px_0_rgba(0,0,0,0.5)]
+                key={item?.id}
+                className={`dark:bg-[#fff] bg-[#fff] dark:text-[#fff] overflow-hidden group grid h-full w-full items-center rounded-tl-[8px] rounded-tr-[8px]  shadow-lg shadow-indigo-500/40 dark:shadow-[0_0_50px_0_rgba(0,0,0,0.5)]
             hover:translate-y-[-10px] transition duration-500
             z-[99]
             `}
               >
-                <Image src={img} className="w-full h-full " alt="portfolio" />
+                <div
+                  style={{ width: "100%", height: "210px" }}
+                  className=" relative p-5"
+                >
+                  <Image
+                    src={item?.img}
+                    // layout="fill"
+                    layout="responsive"
+                    objectFit="cover"
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      bottom: 0,
+                      left: 0,
+                      right: 0,
+                    }}
+                    className="rounded-tl-[8px] rounded-tr-[8px] rounded-bl-[5px] rounded-br-[5px] h-fit"
+                    alt="portfolio"
+                  />
+                </div>
 
-                <div className="p-6 flex justify-between items-center gap-1 ">
-                  <h3 className="text-base font-semibold">{item.title}</h3>
+                <div className="p-6 flex justify-between items-center gap-1 relative z-10 bg-[#212430] rounded-bl-[5px] rounded-br-[5px]">
+                  <h3 className="text-base font-semibold text-[#fff] ">
+                    {item?.title}
+                  </h3>
                   <Link
-                    href={`/projects/${item.id}`}
-                    className=" bg-[#fff0] hover:bg-primary hover:text-[#fff] font-medium border border-primary p-1.5 px-10 rounded-[50px] text-sm"
+                    href={`/projects/${item?.id}`}
+                    className=" bg-[#fff0] hover:bg-primary text-[#fff] font-medium border border-primary p-1.5 px-10 rounded-[50px] text-sm"
                   >
                     Details
                   </Link>
