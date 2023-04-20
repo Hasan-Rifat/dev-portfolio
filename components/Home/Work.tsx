@@ -2045,7 +2045,7 @@ const Work: React.FC<WorkProps> = () => {
           z-[99] rounded-tl-[8px] rounded-tr-[8px]
           `}
               >
-                <div style={{ width: "100%", height: "230px" }}>
+                <div style={{ width: "100%", height: "250px" }}>
                   <Image
                     src={item?.img}
                     // layout="fill"
