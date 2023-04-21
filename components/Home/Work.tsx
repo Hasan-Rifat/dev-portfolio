@@ -2045,16 +2045,16 @@ const Work: React.FC<WorkProps> = () => {
           z-[99] rounded-tl-[8px] rounded-tr-[8px] 
           `}
               >
-                <div style={{ width: "100%", height: "260px" }}>
+                <div className="h-[260px] w-full overflow-hidden ">
                   <Image
                     src={item?.img ?? ""}
-                    className="rounded-xl"
+                    className="rounded-xl w-full min-h-full"
                     alt="portfolio"
                   />
                 </div>
 
-                <div className="relative p-6 flex justify-between items-center gap-1 w-full z-10 bg-[#212430] ">
-                  <h3 className="text-xs font-semibold text-[#fff] rounded-bl-[8px] rounded-br-[8px]">
+                <div className="relative p-6 flex justify-between items-center gap-1 w-full z-10 bg-[#212430] rounded-bl-[8px] rounded-br-[8px]">
+                  <h3 className="text-xs font-semibold text-[#fff] ">
                     {item?.title}
                   </h3>
                   <Link
